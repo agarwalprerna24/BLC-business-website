@@ -15,7 +15,7 @@ import {
 } from "@tabler/icons-react";
 import Hero from "../components/Hero";
 import About from "../components/AboutUs";
-import ClientBanner from "../components/Practices";
+import Practices from "../components/Practices";
 import ContactUs from "../components/ContactUs";
 
 function Home() {
@@ -25,7 +25,7 @@ function Home() {
 
       <About />
 
-      <ClientBanner />
+      <Practices />
 
       <Container maxWidth="lg" sx={{ py: { xs: 8, md: 10 } }}>
         <Grid container spacing={6}>

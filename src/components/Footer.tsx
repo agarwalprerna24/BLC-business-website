@@ -8,7 +8,6 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import {
-  IconScale,
   IconMail,
   IconPhone,
   IconMapPin,
@@ -32,15 +31,10 @@ function Footer() {
         <Grid container spacing={4}>
           <Grid size={{ xs: 12, md: 4 }}>
             <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
-              <IconScale size={32} />
-              <Typography variant="h6" sx={{ ml: 1, fontWeight: 700 }}>
-                BLC
-              </Typography>
+              <img src="/images/blc_inverted.png" width={72} />
             </Box>
             <Typography variant="body2" sx={{ mb: 2, opacity: 0.9 }}>
-              Bhattacharjee Law Chambers is a full-service law firm committed to
-              providing exceptional legal services with integrity and
-              excellence.
+              Bhattacharjee Law Chambers – Advocates & Legal Consultants
             </Typography>
             <Box sx={{ display: "flex", gap: 2, mt: 2 }}>
               <MuiLink
@@ -130,13 +124,19 @@ function Footer() {
             </Typography>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
               <Typography variant="body2" sx={{ opacity: 0.8 }}>
-                Corporate Law
+                Civil & Commercial Litigation
               </Typography>
               <Typography variant="body2" sx={{ opacity: 0.8 }}>
-                Intellectual Property
+                Corporate Services
               </Typography>
               <Typography variant="body2" sx={{ opacity: 0.8 }}>
-                Litigation
+                Arbitration
+              </Typography>
+              <Typography variant="body2" sx={{ opacity: 0.8 }}>
+                Banking & Recovery
+              </Typography>
+              <Typography variant="body2" sx={{ opacity: 0.8 }}>
+                Insolvency
               </Typography>
               <Typography variant="body2" sx={{ opacity: 0.8 }}>
                 Real Estate
@@ -152,20 +152,26 @@ function Footer() {
               <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1 }}>
                 <IconMapPin size={20} style={{ marginTop: 2, flexShrink: 0 }} />
                 <Typography variant="body2" sx={{ opacity: 0.8 }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  Bhattacharjee Law Chambers <br />
+                  Flat No. 101, 1st Floor, Nirman Towers <br />
+                  38 East Marredpally
+                  <br />
+                  Secunderabad – 500 026
+                  <br />
+                  Telangana, India
+                  <br />
                 </Typography>
               </Box>
               <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                 <IconPhone size={20} style={{ flexShrink: 0 }} />
                 <Typography variant="body2" sx={{ opacity: 0.8 }}>
-                  +91 33 1234 5678
+                  +91 99499 36611
                 </Typography>
               </Box>
               <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                 <IconMail size={20} style={{ flexShrink: 0 }} />
                 <Typography variant="body2" sx={{ opacity: 0.8 }}>
-                  info@blc.in
+                  dishit.bhattacharjee@gmail.com
                 </Typography>
               </Box>
             </Box>

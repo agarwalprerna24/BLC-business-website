@@ -40,7 +40,7 @@ function Hero() {
                 lineHeight: 1.2,
               }}
             >
-              Excellence in Legal Practice
+              Excellence in Legal Practice Since 1981
             </Typography>
             <Typography
               variant="h5"
@@ -51,8 +51,8 @@ function Hero() {
                 fontSize: { xs: "1.1rem", md: "1.3rem" },
               }}
             >
-              Your trusted partner in navigating complex legal challenges with
-              integrity, expertise, and unwavering commitment to justice.
+              Your premier partner for strategic corporate advisory, dispute
+              resolution, and compliance.
             </Typography>
             <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
               <Button

@@ -59,29 +59,38 @@ function Practices() {
         <Grid container spacing={4}>
           {[
             {
-              name: "Corporate Law",
+              name: "Civil & Commercial Litigation",
+              icon: <IconGavel size={24} />,
+            },
+            {
+              name: "Insolvency & Bankruptcy",
               icon: <IconCoin size={24} />,
+            },
+            {
+              name: "Arbitration and Dispute Resolution",
+              icon: <IconMessageCircleUser size={24} />,
+            },
+
+            {
+              name: "General Corporate Advisory",
+              icon: <IconUsers size={24} />,
             },
             {
               name: "Real Estate",
               icon: <IconHome size={24} />,
             },
             {
-              name: "Criminal Defense",
-              icon: <IconUsers size={24} />,
-            },
-            {
-              name: "Civil Litigation",
-              icon: <IconGavel size={24} />,
-            },
-            {
-              name: "Employment Law",
+              name: "Employment & Labour Law",
               icon: <IconProng size={24} />,
             },
-            {
-              name: "Regulatory Compliance",
-              icon: <IconMessageCircleUser size={24} />,
-            },
+            // {
+            //   name: "Family",
+            //   icon: <IconUsers size={24} />,
+            // },
+            // {
+            //   name: "Mergers & Acquisitions",
+            //   icon: <IconGitMerge size={24} />,
+            // },
           ].map((client, index) => (
             <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
               <Card

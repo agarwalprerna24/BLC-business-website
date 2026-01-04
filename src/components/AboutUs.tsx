@@ -27,22 +27,31 @@ function About() {
             variant="body1"
             sx={{ mb: 2, fontSize: "1.1rem", lineHeight: 1.8 }}
           >
-            Established with a vision to provide comprehensive legal solutions,
-            Bhattacharjee Law Chambers has grown to become one of the most
-            trusted law firms in the region.
+            Bhattacharjee Law Chambers was founded in 1981 by Designated Senior
+            Advocate Deepak Bhattacharjee, an Osmania University LLB and LLM
+            gold medalist. The Chambers has established a reputation for
+            excellence through over 16,000 cases among which 431 were reported.
+            Today, under the leadership of Advocate Dishit Bhattacharjee, we
+            serve corporations, financial institutions, startups, and
+            individuals across Telangana and beyond.
           </Typography>
           <Typography
             variant="body1"
             sx={{ mb: 3, fontSize: "1.1rem", lineHeight: 1.8 }}
           >
-            Our team of experienced advocates and legal consultants brings
-            decades of combined expertise across diverse practice areas,
-            ensuring that our clients receive the highest quality legal
-            representation and strategic counsel.
+            Led by Advocate Dishit Bhattacharjee having years of distinguished
+            practice, we specialize in dispute resolution before the High Court
+            of Telangana, domestic and international arbitration, recovery
+            proceedings, company and insolvency matters. Our practice seamlessly
+            extends to general corporate advisory, family and employment
+            disputes, real estate due diligence, and non-litigation resolutions.
+            Serving as empanelled counsel to major financial institutions and
+            companies, we combine decades of legal heritage with modern practice
+            to deliver consistent results.
           </Typography>
           <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
             {[
-              "Over 25 years of combined legal experience",
+              "Over 45 years of combined legal experience",
               "Successfully resolved 500+ cases",
               "Client satisfaction rate of 98%",
               "Expertise across multiple practice areas",
