@@ -19,9 +19,10 @@ import { IconMenu2 } from "@tabler/icons-react";
 
 const navItems = [
   { label: "Home", path: "/" },
-  { label: "Expertise", path: "/expertise" },
-  { label: "Company", path: "/company" },
+  { label: "Mentor", path: "/mentor" },
+  { label: "Team", path: "/company" },
   { label: "Newsletters", path: "/newsletters" },
+  { label: "Contact Us", path: "/contact" },
 ];
 
 function Header() {

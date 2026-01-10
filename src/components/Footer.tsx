@@ -12,7 +12,6 @@ import {
   IconPhone,
   IconMapPin,
   IconBrandLinkedin,
-  IconBrandTwitter,
 } from "@tabler/icons-react";
 
 function Footer() {
@@ -47,17 +46,6 @@ function Footer() {
                 }}
               >
                 <IconBrandLinkedin size={24} />
-              </MuiLink>
-              <MuiLink
-                href="#"
-                sx={{
-                  color: "white",
-                  opacity: 0.8,
-                  "&:hover": { opacity: 1 },
-                  transition: "opacity 0.3s",
-                }}
-              >
-                <IconBrandTwitter size={24} />
               </MuiLink>
             </Box>
           </Grid>
@@ -151,16 +139,23 @@ function Footer() {
             <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
               <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1 }}>
                 <IconMapPin size={20} style={{ marginTop: 2, flexShrink: 0 }} />
-                <Typography variant="body2" sx={{ opacity: 0.8 }}>
-                  Bhattacharjee Law Chambers <br />
-                  Flat No. 101, 1st Floor, Nirman Towers <br />
-                  38 East Marredpally
-                  <br />
-                  Secunderabad – 500 026
-                  <br />
-                  Telangana, India
-                  <br />
-                </Typography>
+                <MuiLink
+                  href="https://maps.app.goo.gl/NvPeX1hN6toxa3NcA"
+                  underline="none"
+                  style={{ color: "unset" }}
+                  target="_blank"
+                >
+                  <Typography variant="body2" sx={{ opacity: 0.8 }}>
+                    Bhattacharjee Law Chambers <br />
+                    Flat No. 101, 1st Floor, Nirman Towers <br />
+                    38 East Marredpally
+                    <br />
+                    Secunderabad – 500 026
+                    <br />
+                    Telangana, India
+                    <br />
+                  </Typography>
+                </MuiLink>
               </Box>
               <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                 <IconPhone size={20} style={{ flexShrink: 0 }} />

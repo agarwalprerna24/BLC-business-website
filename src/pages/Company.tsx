@@ -6,25 +6,9 @@ import {
   Card,
   CardContent,
   Avatar,
-  Paper,
   Divider,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
 } from "@mui/material";
-import {
-  IconUser,
-  IconMail,
-  IconPhone,
-  IconAward,
-  IconShieldCheck,
-  IconUsers,
-  IconFileCheck,
-  IconLock,
-  IconHeart,
-  IconScale,
-} from "@tabler/icons-react";
+import { IconUser, IconMail, IconPhone, IconAward } from "@tabler/icons-react";
 
 const partners = [
   {
@@ -73,54 +57,17 @@ const partners = [
   },
 ];
 
-const policies = [
-  {
-    icon: <IconShieldCheck size={32} />,
-    title: "Client Confidentiality",
-    description:
-      "We maintain the strictest confidentiality standards. All client information is protected under attorney-client privilege and our robust data security measures ensure complete privacy.",
-  },
-  {
-    icon: <IconScale size={32} />,
-    title: "Professional Ethics",
-    description:
-      "Our practice is guided by the highest ethical standards set by the Bar Council. We are committed to integrity, honesty, and transparency in all our dealings.",
-  },
-  {
-    icon: <IconUsers size={32} />,
-    title: "Diversity & Inclusion",
-    description:
-      "We believe in creating an inclusive workplace that values diversity. Our firm is committed to equal opportunities and fostering a culture of respect and collaboration.",
-  },
-  {
-    icon: <IconFileCheck size={32} />,
-    title: "Quality Assurance",
-    description:
-      "Every matter is handled with meticulous attention to detail. We have established quality control processes to ensure the highest standards of legal service delivery.",
-  },
-  {
-    icon: <IconLock size={32} />,
-    title: "Data Protection",
-    description:
-      "We comply with all data protection regulations and employ advanced security measures to safeguard client information. Regular audits ensure continuous compliance.",
-  },
-  {
-    icon: <IconHeart size={32} />,
-    title: "Pro Bono Work",
-    description:
-      "We are committed to giving back to society. Our firm regularly undertakes pro bono cases and provides legal aid to underprivileged sections of society.",
-  },
-];
-
 function Company() {
   return (
     <Box>
       <Box
         sx={{
+          backgroundImage: "url('/images/our_team.png')",
           bgcolor: "primary.main",
           color: "white",
           py: { xs: 8, md: 10 },
           textAlign: "center",
+          backgroundPosition: "center",
         }}
       >
         <Container maxWidth="lg">
@@ -132,7 +79,7 @@ function Company() {
               mb: 2,
             }}
           >
-            Our Firm
+            Our Team
           </Typography>
           <Typography
             variant="h6"
@@ -143,40 +90,14 @@ function Company() {
               fontWeight: 400,
             }}
           >
-            Meet our distinguished partners and learn about the values that
-            guide our practice
+            Meet our distinguished team and learn about the values that guide
+            our practice
           </Typography>
         </Container>
       </Box>
 
       <Container maxWidth="lg" sx={{ py: { xs: 8, md: 10 } }}>
         <Box sx={{ mb: 8 }}>
-          <Typography
-            variant="h2"
-            sx={{
-              fontSize: { xs: "2rem", md: "2.5rem" },
-              fontWeight: 700,
-              mb: 2,
-              color: "primary.main",
-              textAlign: "center",
-            }}
-          >
-            Our Partners
-          </Typography>
-          <Typography
-            variant="body1"
-            sx={{
-              textAlign: "center",
-              mb: 6,
-              color: "text.secondary",
-              maxWidth: 700,
-              mx: "auto",
-            }}
-          >
-            Our partners bring decades of combined expertise and are recognized
-            leaders in their respective fields
-          </Typography>
-
           <Grid container spacing={4}>
             {partners.map((partner, index) => (
               <Grid size={{ xs: 12, md: 6 }} key={index}>
@@ -292,140 +213,7 @@ function Company() {
             ))}
           </Grid>
         </Box>
-
-        <Divider sx={{ my: 8 }} />
-
-        <Box>
-          <Typography
-            variant="h2"
-            sx={{
-              fontSize: { xs: "2rem", md: "2.5rem" },
-              fontWeight: 700,
-              mb: 2,
-              color: "primary.main",
-              textAlign: "center",
-            }}
-          >
-            Our Policies & Values
-          </Typography>
-          <Typography
-            variant="body1"
-            sx={{
-              textAlign: "center",
-              mb: 6,
-              color: "text.secondary",
-              maxWidth: 700,
-              mx: "auto",
-            }}
-          >
-            The principles and policies that define our practice and guide our
-            commitment to excellence
-          </Typography>
-
-          <Grid container spacing={3}>
-            {policies.map((policy, index) => (
-              <Grid size={{ xs: 12, md: 6 }} key={index}>
-                <Paper
-                  elevation={0}
-                  sx={{
-                    p: 3,
-                    height: "100%",
-                    border: "1px solid",
-                    borderColor: "divider",
-                    transition: "all 0.3s ease",
-                    "&:hover": {
-                      transform: "translateY(-4px)",
-                      boxShadow: 4,
-                      borderColor: "secondary.main",
-                    },
-                  }}
-                >
-                  <Box sx={{ display: "flex", alignItems: "flex-start" }}>
-                    <Box
-                      sx={{
-                        color: "primary.main",
-                        mr: 2,
-                        flexShrink: 0,
-                        mt: 0.5,
-                      }}
-                    >
-                      {policy.icon}
-                    </Box>
-                    <Box>
-                      <Typography variant="h6" sx={{ fontWeight: 600, mb: 1 }}>
-                        {policy.title}
-                      </Typography>
-                      <Typography
-                        variant="body2"
-                        sx={{ color: "text.secondary", lineHeight: 1.7 }}
-                      >
-                        {policy.description}
-                      </Typography>
-                    </Box>
-                  </Box>
-                </Paper>
-              </Grid>
-            ))}
-          </Grid>
-        </Box>
       </Container>
-
-      <Box sx={{ bgcolor: "grey.50", py: { xs: 8, md: 10 } }}>
-        <Container maxWidth="md">
-          <Typography
-            variant="h3"
-            sx={{
-              fontWeight: 700,
-              mb: 3,
-              color: "primary.main",
-              textAlign: "center",
-            }}
-          >
-            Our Commitment
-          </Typography>
-          <Paper
-            elevation={0}
-            sx={{ p: 4, border: "2px solid", borderColor: "primary.main" }}
-          >
-            <Typography
-              variant="body1"
-              sx={{ mb: 2, lineHeight: 1.8, fontSize: "1.05rem" }}
-            >
-              At Bhattacharjee Law Chambers, we are committed to:
-            </Typography>
-            <List>
-              {[
-                "Providing exceptional legal services with integrity and professionalism",
-                "Maintaining the highest ethical standards in all our practices",
-                "Continuous learning and staying updated with legal developments",
-                "Building long-term relationships based on trust and results",
-                "Contributing positively to society through pro bono work",
-                "Creating an inclusive and respectful workplace environment",
-              ].map((commitment, index) => (
-                <ListItem key={index} sx={{ py: 0.5 }}>
-                  <ListItemIcon sx={{ minWidth: 36 }}>
-                    <Box
-                      sx={{
-                        width: 8,
-                        height: 8,
-                        borderRadius: "50%",
-                        bgcolor: "secondary.main",
-                      }}
-                    />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary={commitment}
-                    primaryTypographyProps={{
-                      fontSize: "1rem",
-                      lineHeight: 1.7,
-                    }}
-                  />
-                </ListItem>
-              ))}
-            </List>
-          </Paper>
-        </Container>
-      </Box>
     </Box>
   );
 }

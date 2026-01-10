@@ -3,7 +3,9 @@ import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Expertise from "./pages/Expertise";
+// import Expertise from "./pages/Expertise";
+import Contact from "./pages/Contact";
+import Mentor from "./pages/Mentor";
 import Company from "./pages/Company";
 import Newsletters from "./pages/Newsletters";
 
@@ -59,7 +61,9 @@ function App() {
           <main style={{ flex: 1 }}>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/expertise" element={<Expertise />} />
+              {/* <Route path="/expertise" element={<Expertise />} /> */}
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/mentor" element={<Mentor />} />
               <Route path="/company" element={<Company />} />
               <Route path="/newsletters" element={<Newsletters />} />
             </Routes>

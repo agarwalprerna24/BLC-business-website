@@ -113,10 +113,12 @@ function Newsletters() {
     <Box>
       <Box
         sx={{
+          backgroundImage: "url('/images/our_newsletters.png')",
           bgcolor: "primary.main",
           color: "white",
           py: { xs: 8, md: 10 },
           textAlign: "center",
+          backgroundPosition: "center",
         }}
       >
         <Container maxWidth="lg">
