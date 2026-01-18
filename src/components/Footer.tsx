@@ -37,7 +37,8 @@ function Footer() {
             </Typography>
             <Box sx={{ display: "flex", gap: 2, mt: 2 }}>
               <MuiLink
-                href="#"
+                href="https://www.linkedin.com/company/battacharjee-law-chambers/about/?viewAsMember=true"
+                target="_blank"
                 sx={{
                   color: "white",
                   opacity: 0.8,
@@ -166,7 +167,7 @@ function Footer() {
               <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                 <IconMail size={20} style={{ flexShrink: 0 }} />
                 <Typography variant="body2" sx={{ opacity: 0.8 }}>
-                  dishit.bhattacharjee@gmail.com
+                  info@dbadvocate.com
                 </Typography>
               </Box>
             </Box>

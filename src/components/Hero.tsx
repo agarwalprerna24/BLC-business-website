@@ -5,6 +5,7 @@ function Hero() {
     <Box
       sx={{
         backgroundImage: "url('/images/hero_2.png')",
+        backgroundSize: "cover",
         // background: `linear-gradient(135deg, ${theme.palette.primary.main} 0%, ${theme.palette.primary.light} 100%)`,
         color: "white",
         pt: { xs: 8, md: 12 },
@@ -28,7 +29,7 @@ function Hero() {
         },
       }}
     >
-      <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
+      <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
         <Grid container spacing={4} alignItems="center">
           <Grid size={{ xs: 12, md: 7 }}>
             <Typography
@@ -40,7 +41,7 @@ function Hero() {
                 lineHeight: 1.2,
               }}
             >
-              Excellence in Legal Practice Since 1981
+              Precision is our first argument
             </Typography>
             <Typography
               variant="h5"
@@ -51,14 +52,14 @@ function Hero() {
                 fontSize: { xs: "1.1rem", md: "1.3rem" },
               }}
             >
-              Your premier partner for strategic corporate advisory, dispute
-              resolution, and compliance.
+              Your premier partner for dispute resolution, strategic corporate
+              advisory and compliance.
             </Typography>
             <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
               <Button
                 variant="contained"
                 size="large"
-                href="#contact"
+                href="/contact"
                 sx={{
                   bgcolor: "secondary.main",
                   color: "primary.dark",

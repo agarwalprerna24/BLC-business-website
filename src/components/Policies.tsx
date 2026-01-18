@@ -27,37 +27,37 @@ const policies = [
     icon: <IconShieldCheck size={32} />,
     title: "Client Confidentiality",
     description:
-      "We maintain the strictest confidentiality standards. All client information is protected under attorney-client privilege and our robust data security measures ensure complete privacy.",
+      "We place the highest importance on client confidentiality. All information shared with us is protected by attorney-client privilege and handled in accordance with strict internal confidentiality protocols.",
   },
   {
     icon: <IconScale size={32} />,
     title: "Professional Ethics",
     description:
-      "Our practice is guided by the highest ethical standards set by the Bar Council. We are committed to integrity, honesty, and transparency in all our dealings.",
+      "Our practice is governed by the ethical standards prescribed by the Bar Council. We conduct ourselves with integrity, independence, and transparency in every engagement.",
   },
   {
     icon: <IconUsers size={32} />,
     title: "Diversity & Inclusion",
     description:
-      "We believe in creating an inclusive workplace that values diversity. Our firm is committed to equal opportunities and fostering a culture of respect and collaboration.",
+      "We are committed to maintaining an inclusive and respectful work environment. Our firm values diversity and ensures equal opportunity across all levels of theorganisation.",
   },
   {
     icon: <IconFileCheck size={32} />,
     title: "Quality Assurance",
     description:
-      "Every matter is handled with meticulous attention to detail. We have established quality control processes to ensure the highest standards of legal service delivery.",
+      "Every matter is handled with careful attention and structured review. We follow internal quality checks to ensure accuracy, consistency, and reliable legal outcomes.",
   },
   {
     icon: <IconLock size={32} />,
     title: "Data Protection",
     description:
-      "We comply with all data protection regulations and employ advanced security measures to safeguard client information. Regular audits ensure continuous compliance.",
+      "We adhere to applicable data protection laws and maintain secure systems to safeguard client information. Regular monitoring and reviews are undertaken to ensure continued compliance.",
   },
   {
     icon: <IconHeart size={32} />,
     title: "Pro Bono Work",
     description:
-      "We are committed to giving back to society. Our firm regularly undertakes pro bono cases and provides legal aid to underprivileged sections of society.",
+      "We recognise our responsibility towards the legal profession and society. The firm undertakes pro bono work and provides legal assistance to individuals and communities in need.",
   },
 ];
 
