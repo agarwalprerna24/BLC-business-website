@@ -6,3 +6,11 @@
     background-position: 0 100%;
   }
 }
+
+.slick-prev::before {
+  color: #4c6593 !important;
+}
+
+.slick-next::before {
+  color: #4c6593 !important;
+}

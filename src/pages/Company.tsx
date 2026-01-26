@@ -227,7 +227,7 @@ function Company() {
           </Grid>
           <Grid size={{ xs: 12, md: 4 }} p={2}>
             <img
-              src="/images/deepak_bhattacharjee.png"
+              src="/images/dishit.png"
               width="95%"
               style={{ borderRadius: "25px" }}
             />
@@ -530,7 +530,7 @@ function Company() {
                     title="Rudraksh Toshniwal"
                     subheader="Junior Associate"
                   />
-                  <img src="/images/ashutosh.png" height={300} width={"auto"} />
+                  <img src="/images/rudraksh.png" height={300} width={"auto"} />
                   <CardContent>
                     <Grid container>
                       <Grid>

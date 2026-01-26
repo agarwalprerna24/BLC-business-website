@@ -14,37 +14,106 @@ import Policies from "../components/Policies";
 
 const newsReports = [
   {
-    name: "ABC",
-    platform: "Lorem Ipsum",
+    name: "An Analysis on SARFAESI Act of 2002",
+    platform: "Oct 31, 2022",
     image:
-      "https://thumbs.dreamstime.com/b/business-accounting-team-meeting-room-office-using-pen-pointing-paperwork-finance-concept-business-accounting-team-meeting-154771088.jpg",
-    link: "https://www.dreamstime.com/photos-images/business.html",
+      "https://www.lawyered.in/uploads/blog/d6c267f570d945049f64db087ac017da.jpg",
+    link: "https://www.lawyered.in/legal-disrupt/articles/analysis-sarfaesi-act-2002/",
   },
   {
-    name: "ABC",
-    platform: "Lorem Ipsum",
+    name: "SC backs mothers right to gift self acquired property to son",
+    platform: "Aug 03, 2025",
     image:
-      "https://burst.shopifycdn.com/photos/business-women-working.jpg?width=1000&format=pjpg&exif=0&iptc=0",
-    link: "https://www.shopify.com/stock-photos/business",
+      "https://static.toiimg.com/thumb/msid-123067237,imgsize-29260,width-400,height-225,resizemode-72/123067237.jpg",
+    link: "https://timesofindia.indiatimes.com/city/hyderabad/sc-backs-mothers-right-to-gift-self-acquired-property-to-son/articleshow/123067238.cms",
   },
   {
-    name: "ABC",
-    platform: "Lorem Ipsum",
+    name: "Appellant Has Right To Withdraw Appeal Without Any Strings Attached, High Court Must Grant Leave When Requested: Telangana High Court",
+    platform: "July 17, 2024",
     image:
-      "https://plus.unsplash.com/premium_photo-1661772661721-b16346fe5b0f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3N8ZW58MHx8MHx8fDA%3D",
-    link: "https://unsplash.com/s/photos/business",
+      "https://www.livelaw.in/h-upload/2024/06/28/750x450_546606-justice-moushumi-bhattacharya-justice-mg-priyadarsini-telangana-hc.webp",
+    link: "https://www.livelaw.in/high-court/telangana-high-court/the-appellant-has-right-to-withdraw-appeal-without-strings-attached-high-court-must-grant-leave-when-requested-263660",
   },
   {
-    name: "ABC",
-    platform: "Lorem Ipsum",
+    name: "Mutually Destructive Pleas No Ground To Reject Plaint Under Order 7 Rule 11 CPC: Telangana High Court",
+    platform: "Nov 23, 2023",
     image:
-      "https://cdn.pixabay.com/photo/2015/03/19/08/26/analysis-680572_640.jpg",
-    link: "https://pixabay.com/images/search/business/",
+      "https://www.livelaw.in/h-upload/2023/11/01/750x450_501194-justice-t-vinod-kumar-telangana-high-court.webp",
+    link: "https://www.livelaw.in/high-court/telangana-high-court/telangana-high-court-ruling-plaint-rejection-inconsistent-pleas-order-7-rule-11-cpc-242823?infinitescroll=1",
+  },
+  {
+    name: "Explainer: A primer on breach of contract, lawsuits",
+    platform: "Dec 30, 2023",
+    image:
+      "https://img.etimg.com/thumb/msid-106388426,width-300,height-225,imgsize-8364,resizemode-75/explainer-a-primer-on-breach-of-contract-lawsuits.jpg",
+    link: "https://economictimes.indiatimes.com/jobs/c-suite/explainer-a-primer-on-breach-of-contract-lawsuits/articleshow/106388355.cms",
+  },
+  {
+    name: "Union Bank of India Vs. Canara Bank and Anr. – NCLT Hyderabad Bench",
+    platform: "Aug 11, 2025",
+    image:
+      "https://img.freepik.com/free-photo/gavel-scales-justice-law-books_23-2151998158.jpg?semt=ais_user_personalization&w=740&q=80",
+    link: "https://ibclaw.in/union-bank-of-india-vs-canara-bank-and-anr-nclt-hyderabad-bench/",
+  },
+  {
+    name: "Namas Madhucon goes bankrupt, NCLT initiates insolvency process",
+    platform: "Dec 10, 2023",
+    image:
+      "https://static.toiimg.com/thumb/msid-105871489,imgsize-643868,width-400,height-225,resizemode-72/105871489.jpg",
+    link: "https://timesofindia.indiatimes.com/city/hyderabad/namas-madhucon-goes-bankrupt-nclt-initiates-insolvency-process/articleshow/105871489.cms",
+  },
+  {
+    name: "DHCL debt crisis: NCLT kick starts insolvency process",
+    platform: "Jul 20, 2017",
+    image:
+      "https://static.toiimg.com/thumb/msid-59674965,imgsize-52229,width-400,height-225,resizemode-72/59674965.jpg",
+    link: "https://timesofindia.indiatimes.com/city/hyderabad/dchl-debt-crisis-nclt-kick-starts-insolvency-process/articleshow/59674957.cms",
+  },
+  {
+    name: "₹1.4k crore loan default pushes GVK Energy into insolvency",
+    platform: "May 8, 2025",
+    image:
+      "https://media.licdn.com/dms/image/v2/D5622AQHJlZO4kue2cg/feedshare-shrink_800/B56ZbI5OJ0H0Ao-/0/1747127166340?e=1770854400&v=beta&t=qeo52Zf9KBl6V2Bg3sP_gVkbqPXthBAy9aN_I03DvsY",
+    link: "https://www.linkedin.com/posts/dishit-bhattacharjee-b5187780_it-was-a-pleasure-assisting-the-honorable-activity-7327982469062758400-Ax8o/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABE2zK0Bc3ePGHNPQF2WjRGUFd7SOWmT3rQ",
   },
 ];
 
 function Home() {
   const theme = useTheme();
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function SampleNextArrow(props: any) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          color: theme.palette.primary.main,
+          right: "10px",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function SamplePrevArrow(props: any) {
+    const { className, style, onClick } = props;
+    return (
+      <Box
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          color: theme.palette.primary.main,
+          left: "10px",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
 
   const settings = {
     infinite: true,
@@ -54,6 +123,8 @@ function Home() {
     autoplaySpeed: 2000,
     // cssEase: "linear",
     pauseOnHover: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   return (
@@ -85,11 +156,19 @@ function Home() {
         >
           News & Reports
         </Typography>
-        <Box className="slide-container">
+        <Box className="slider-container">
           <Slider {...settings}>
             {newsReports.map((item) => (
               <Card sx={{ maxWidth: 345 }}>
-                <CardHeader title={item.name} subheader={item.platform} />
+                <CardHeader
+                  slotProps={{
+                    title: {
+                      sx: { color: "primary.main", fontSize: "1.25rem" },
+                    },
+                  }}
+                  title={item.name}
+                  subheader={item.platform}
+                />
                 <CardMedia
                   component="img"
                   height="194"
