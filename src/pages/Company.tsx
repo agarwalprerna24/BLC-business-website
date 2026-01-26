@@ -530,7 +530,11 @@ function Company() {
                     title="Rudraksh Toshniwal"
                     subheader="Junior Associate"
                   />
-                  <img src="/images/rudraksh.png" height={300} width={"auto"} />
+                  <img
+                    src="/images/rudhraksh.png"
+                    height={300}
+                    width={"auto"}
+                  />
                   <CardContent>
                     <Grid container>
                       <Grid>
