@@ -8,8 +8,8 @@ function Hero() {
         backgroundSize: "cover",
         // background: `linear-gradient(135deg, ${theme.palette.primary.main} 0%, ${theme.palette.primary.light} 100%)`,
         color: "white",
-        pt: { xs: 8, md: 12 },
-        pb: { xs: 10, md: 14 },
+        pt: { xs: 6, md: 10 },
+        pb: { xs: 6, md: 10 },
         position: "relative",
         overflow: "hidden",
         backgroundPosition: "0px 0px",
@@ -35,9 +35,9 @@ function Hero() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "2.5rem", md: "3.5rem", lg: "4rem" },
+                fontSize: { xs: "1.5rem", md: "2.5rem", lg: "3rem" },
                 fontWeight: 700,
-                mb: 2,
+                mb: 1,
                 lineHeight: 1.2,
               }}
             >
@@ -46,10 +46,10 @@ function Hero() {
             <Typography
               variant="h5"
               sx={{
-                mb: 4,
+                mb: 2,
                 opacity: 0.95,
                 fontWeight: 400,
-                fontSize: { xs: "1.1rem", md: "1.3rem" },
+                fontSize: { xs: "1rem", md: "1.2rem" },
               }}
             >
               Your premier partner for dispute resolution, strategic corporate
@@ -58,7 +58,7 @@ function Hero() {
             <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
               <Button
                 variant="contained"
-                size="large"
+                size="medium"
                 href="/contact"
                 sx={{
                   bgcolor: "secondary.main",
@@ -75,7 +75,7 @@ function Hero() {
               </Button>
               <Button
                 variant="outlined"
-                size="large"
+                size="medium"
                 component={Link}
                 href="/expertise"
                 sx={{

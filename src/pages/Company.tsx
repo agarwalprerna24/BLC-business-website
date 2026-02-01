@@ -67,7 +67,7 @@ function Company() {
           backgroundImage: "url('/images/our_team_2.png')",
           bgcolor: "primary.main",
           color: "white",
-          py: { xs: 16, md: 18 },
+          py: { xs: 10, md: 12 },
           textAlign: "center",
           backgroundPosition: "top left",
         }}
@@ -99,150 +99,114 @@ function Company() {
       </Box>
 
       <Container maxWidth={false} sx={{ p: { xs: 8, md: 10 } }}>
-        <Grid container spacing={4} alignItems="center">
-          <Grid size={{ xs: 12, md: 8 }}>
-            <Typography
-              variant="h2"
-              sx={{
-                fontSize: { xs: "2rem", md: "2.5rem" },
-                fontWeight: 700,
-                mb: 1,
-                color: "primary.main",
-              }}
-            >
-              Dishit Bhattacharjee
-            </Typography>
-            <Typography
-              variant="h5"
-              sx={{
-                // fontSize: { xs: "2rem", md: "2.5rem" },
-                fontWeight: 500,
-                mb: 3,
-                color: "primary.main",
-              }}
-            >
-              Founder
-              <MuiLink
-                href="https://www.linkedin.com/company/battacharjee-law-chambers/about/?viewAsMember=true"
-                target="_blank"
-                sx={{
-                  opacity: 0.8,
-                  "&:hover": { opacity: 1 },
-                  transition: "opacity 0.3s",
-                  mx: "0.25rem",
-                  verticalAlign: "text-top",
-                }}
-              >
-                <IconBrandLinkedin
-                  size={24}
-                  style={{ verticalAlign: "text-top" }}
-                />
-              </MuiLink>
-              <MuiLink
-                href="mailto:dishitbhattacharjee@gmail.com"
-                target="_blank"
-                sx={{
-                  opacity: 0.8,
-                  "&:hover": { opacity: 1 },
-                  transition: "opacity 0.3s",
-                  // mx: "0.25rem",
-                  verticalAlign: "text-top",
-                }}
-              >
-                <IconMail size={24} style={{ verticalAlign: "text-top" }} />
-              </MuiLink>
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{ mb: 2, fontSize: "1.1rem", lineHeight: 1.8 }}
-            >
-              Dishit Bhattacharjee is an advocate with over thirteen years of
-              distinguished post- qualification experience in litigation,
-              dispute resolution, and corporate advisory practice. An alumnus of
-              the University College of Law, Osmania University, Hyderabad, he
-              provides expert counsel to a diverse clientele on intricate
-              commercial, corporate, banking, arbitration, and civil matters.
-              His practice is characterized by strategic clarity, rigorous
-              drafting, and commercially sound legal solutions.
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{ mb: 2, fontSize: "1.1rem", lineHeight: 1.8 }}
-            >
-              Mr. Bhattacharjee frequently appears before the High Court of
-              Telangana and possesses extensive experience representing clients
-              before the National Company Law Tribunal (NCLT), Debt Recovery
-              Tribunals (DRT), Commercial Courts, Civil Courts, and Family
-              Courts. His litigation practice encompasses high-value commercial
-              disputes, insolvency and restructuring proceedings, banking and
-              recovery actions, arbitration-related litigation, and
-              constitutional remedies. His extensive and varied exposure across
-              trial courts, subordinate courts, and specialized tribunals has
-              endowed him with a comprehensive understanding of litigation at
-              every adjudicatory level.
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{ mb: 2, fontSize: "1.1rem", lineHeight: 1.8 }}
-            >
-              In addition to his court practice, Mr. Bhattacharjee maintains a
-              robust corporate and commercial advisory practice. He routinely
-              drafts, negotiates, and reviews complex legal documentation,
-              including investment and shareholder arrangements, joint ventures,
-              employment contracts, loan and security documentation, debt
-              restructuring agreements, real estate conveyancing instruments,
-              and technology and commercial contracts. He also provides counsel
-              on regulatory compliances, statutory registrations, and
-              transaction structuring across various sectors. Advocate
-              Bhattacharjee has significant experience in domestic and
-              international arbitration, including involvement in high-value,
-              multi-jurisdictional disputes administered by leading
-              international arbitral institutions. He has assisted prominent law
-              firms in complex, multi- million-dollar proceedings and has
-              advised companies in connection with Initial Public Offerings
-              (IPOs) and related regulatory compliances.
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{ mb: 2, fontSize: "1.1rem", lineHeight: 1.8 }}
-            >
-              A substantial component of his practice involves acting for banks,
-              financial institutions, and asset reconstruction companies as
-              lender-side legal counsel. He advises on due diligence, security
-              creation, enforcement documentation, and insolvency proceedings.
-              He also leads dedicated real estate practice, providing title due
-              diligence, legal scrutiny reports, and transactional advisory for
-              acquisitions, financings, and development projects. Mr.
-              Bhattacharjee additionally handles sensitive and complex family
-              law matters, including divorce, custody, maintenance, and allied
-              proceedings, combining legal precision with discretion. He leads a
-              structured legal team comprising associates, junior advocates, and
-              court clerks, organized through court-specific teams to ensure
-              efficiency and seamless execution. Recognized for his meticulous
-              approach, strategic insight, and strong courtroom presence, Dishit
-              Bhattacharjee is trusted by both institutional and individual
-              clients for matters requiring legal depth, commercial acumen, and
-              decisive representation.
-            </Typography>
-          </Grid>
-          <Grid size={{ xs: 12, md: 4 }} p={2}>
-            <img
-              src="/images/dishit.png"
-              width="95%"
-              style={{ borderRadius: "25px" }}
+        <Typography
+          variant="h2"
+          sx={{
+            fontSize: { xs: "2rem", md: "2.5rem" },
+            fontWeight: 700,
+            mb: 1,
+            color: "primary.main",
+          }}
+        >
+          Dishit Bhattacharjee
+        </Typography>
+        <Typography
+          variant="h5"
+          sx={{
+            // fontSize: { xs: "2rem", md: "2.5rem" },
+            fontWeight: 500,
+            mb: 3,
+            color: "primary.main",
+          }}
+        >
+          Founder
+          <MuiLink
+            href="https://www.linkedin.com/company/battacharjee-law-chambers/about/?viewAsMember=true"
+            target="_blank"
+            sx={{
+              opacity: 0.8,
+              "&:hover": { opacity: 1 },
+              transition: "opacity 0.3s",
+              mx: "0.25rem",
+              verticalAlign: "text-top",
+            }}
+          >
+            <IconBrandLinkedin
+              size={24}
+              style={{ verticalAlign: "text-top" }}
             />
-          </Grid>
+          </MuiLink>
+          <MuiLink
+            href="mailto:dishitbhattacharjee@gmail.com"
+            target="_blank"
+            sx={{
+              opacity: 0.8,
+              "&:hover": { opacity: 1 },
+              transition: "opacity 0.3s",
+              // mx: "0.25rem",
+              verticalAlign: "text-top",
+            }}
+          >
+            <IconMail size={24} style={{ verticalAlign: "text-top" }} />
+          </MuiLink>
+        </Typography>
+
+        <Grid container style={{ display: "inline-block" }}>
+          <img
+            src="/images/dishit.png"
+            width="300"
+            style={{ borderRadius: "25px", float: "left", marginRight: "2rem" }}
+          />
+          <Typography
+            variant="body1"
+            sx={{
+              mb: 2,
+              fontSize: "1.1rem",
+              lineHeight: 1.8,
+              textAlign: "justify",
+            }}
+          >
+            Dishit Bhattacharjee is an advocate with over thirteen years of
+            distinguished experience in litigation, dispute resolution, and
+            corporate advisory practice. An alumnus of the University College of
+            Law, Osmania University, Hyderabad, he advises a diverse clientele
+            comprising corporations, financial institutions, start-ups, and
+            individual clients on commercial, corporate, banking, arbitration,
+            and civil matters, with a practice defined by strategic clarity and
+            commercially sound legal resolutions. He frequently appears before
+            the High Court of Telangana and has extensive experience
+            representing clients before the National Company Law Tribunal
+            (NCLT), Debt Recovery Tribunals (DRT), Commercial Courts, Civil
+            Courts, and Family Courts. His litigation portfolio spans high-value
+            commercial disputes, recovery proceedings, insolvency and
+            restructuring matters, arbitration, and constitutional remedies, and
+            his practice also spans across trial courts and specialised
+            tribunals across jurisdictions. <br />
+            Mr. Bhattacharjee also maintains a robust corporate and commercial
+            advisory practice, negotiating, and reviewing complex legal
+            documentation including investment and shareholder arrangements,
+            joint ventures, employment contracts, loan and security
+            documentation, debt restructuring agreements, and technology and
+            commercial contracts, while also advising on regulatory compliances
+            and transactions. His work further extends to domestic and
+            international arbitration, non-litigation dispute resolution,
+            employment and family disputes, and real estate due diligence,
+            combining longstanding legal heritage with a modern,
+            solution-oriented approach. He also advises banks, financial
+            institutions, and asset reconstruction companies on and heads this
+            Chamber. He is regarded for his strategic insight and advocacy.
+          </Typography>
         </Grid>
       </Container>
 
       <Box
         sx={{
           bgcolor: `${theme.palette.secondary.light}`,
-          py: { xs: 8, md: 10 },
+          py: { xs: 6, md: 8 },
         }}
         style={{ textAlign: "center" }}
       >
-        <Container maxWidth={false} sx={{ p: { xs: 8, md: 10 } }}>
+        <Container maxWidth={false} sx={{ px: { xs: 8, md: 10 } }}>
           <Box sx={{ mb: 8 }}>
             <Grid
               container
@@ -251,10 +215,7 @@ function Company() {
               justifyContent={"center"}
               my={10}
             >
-              <Grid
-                // size={{ xs: 12, md: 6 }}
-                sx={{ justifyContent: "center", display: "flex" }}
-              >
+              <Grid sx={{ justifyContent: "center", display: "flex" }}>
                 <HoverCard>
                   <CardHeader
                     title="Prasoon Das"
@@ -269,7 +230,7 @@ function Company() {
                     <Grid container>
                       <Grid>
                         <MuiLink
-                          href="#"
+                          href="https://www.linkedin.com/in/prasoon-das-prf/"
                           target="_blank"
                           sx={{
                             opacity: 0.8,
@@ -310,16 +271,14 @@ function Company() {
                         responsibility for dispute resolution and litigation
                         before civil courts, High Courts, and tribunals. He also
                         oversees corporate and commercial advisory work,
-                        including document and contract management.
+                        including contract management, strategic legal advisory,
+                        and compliance-related matters.
                       </Typography>
                     </Box>
                   </CardContent>
                 </HoverCard>
               </Grid>
-              <Grid
-                // size={{ xs: 12, md: 6 }}
-                sx={{ justifyContent: "center", display: "flex" }}
-              >
+              <Grid sx={{ justifyContent: "center", display: "flex" }}>
                 <HoverCard>
                   <CardHeader
                     title="Vishwajit Khyatam"
@@ -333,7 +292,7 @@ function Company() {
                   <CardContent>
                     <Grid container>
                       <Grid>
-                        <MuiLink
+                        {/* <MuiLink
                           href="#"
                           target="_blank"
                           sx={{
@@ -348,7 +307,7 @@ function Company() {
                             size={24}
                             style={{ verticalAlign: "text-top" }}
                           />
-                        </MuiLink>
+                        </MuiLink> */}
                       </Grid>
                       <Grid>
                         <MuiLink
@@ -383,6 +342,7 @@ function Company() {
                 </HoverCard>
               </Grid>
             </Grid>
+
             <Grid
               container
               spacing={4}
@@ -403,7 +363,7 @@ function Company() {
                     <Grid container>
                       <Grid>
                         <MuiLink
-                          href="#"
+                          href="https://www.linkedin.com/in/sanjana-proddatoori/"
                           target="_blank"
                           sx={{
                             opacity: 0.8,
@@ -452,6 +412,7 @@ function Company() {
                 </HoverCard>
               </Grid>
             </Grid>
+
             <Grid
               container
               spacing={4}
@@ -459,10 +420,7 @@ function Company() {
               justifyContent={"center"}
               my={10}
             >
-              <Grid
-                // size={{ xs: 12, md: 6 }}
-                sx={{ justifyContent: "center", display: "flex" }}
-              >
+              <Grid sx={{ justifyContent: "center", display: "flex" }}>
                 <HoverCard>
                   <CardHeader
                     title="Ashutosh Singh"
@@ -473,7 +431,7 @@ function Company() {
                     <Grid container>
                       <Grid>
                         <MuiLink
-                          href="#"
+                          href="https://www.linkedin.com/in/ashutosh-singh-2b11491b0/?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=ios_app"
                           target="_blank"
                           sx={{
                             opacity: 0.8,
@@ -521,10 +479,7 @@ function Company() {
                   </CardContent>
                 </HoverCard>
               </Grid>
-              <Grid
-                // size={{ xs: 12, md: 6 }}
-                sx={{ justifyContent: "center", display: "flex" }}
-              >
+              <Grid sx={{ justifyContent: "center", display: "flex" }}>
                 <HoverCard>
                   <CardHeader
                     title="Rudraksh Toshniwal"
@@ -539,7 +494,7 @@ function Company() {
                     <Grid container>
                       <Grid>
                         <MuiLink
-                          href="#"
+                          href="https://www.linkedin.com/in/rudraksh-toshniwal-8b6367315/"
                           target="_blank"
                           sx={{
                             opacity: 0.8,
@@ -576,17 +531,83 @@ function Company() {
                     </Grid>
                     <Box className="extraContent">
                       <Typography variant="subtitle2" textAlign={"left"} p={1}>
-                        Rudraksh is an Associate engaged in High Court practice
-                        and criminal litigation. His work includes assisting in
-                        criminal proceedings, bail matters, and writ petitions,
-                        along with legal research and drafting of pleadings and
-                        applications at various stages of proceedings.
+                        Rudraksh is a Junior Associate engaged in High Court
+                        practice and criminal litigation. His work includes
+                        assisting in criminal proceedings, bail matters, and
+                        writ petitions, along with legal research and drafting
+                        of pleadings and applications at various stages of
+                        proceedings.
+                      </Typography>
+                    </Box>
+                  </CardContent>
+                </HoverCard>
+              </Grid>
+              <Grid sx={{ justifyContent: "center", display: "flex" }}>
+                <HoverCard>
+                  <CardHeader
+                    title="Samarthan Reddy"
+                    subheader="Junior Associate"
+                  />
+                  <img
+                    src="/images/samarthan.png"
+                    height={300}
+                    width={"auto"}
+                  />
+                  <CardContent>
+                    <Grid container>
+                      <Grid>
+                        <MuiLink
+                          href="https://www.linkedin.com/in/samarthan-reddy027784373?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app )"
+                          target="_blank"
+                          sx={{
+                            opacity: 0.8,
+                            "&:hover": { opacity: 1 },
+                            transition: "opacity 0.3s",
+                            mx: "0.25rem",
+                            verticalAlign: "text-top",
+                          }}
+                        >
+                          <IconBrandLinkedin
+                            size={24}
+                            style={{ verticalAlign: "text-top" }}
+                          />
+                        </MuiLink>
+                      </Grid>
+                      <Grid>
+                        <MuiLink
+                          href="mailto:samarthanreddy@dbadvocate.com"
+                          target="_blank"
+                          sx={{
+                            opacity: 0.8,
+                            "&:hover": { opacity: 1 },
+                            transition: "opacity 0.3s",
+                            // mx: "0.25rem",
+                            verticalAlign: "text-top",
+                          }}
+                        >
+                          <IconMail
+                            size={24}
+                            style={{ verticalAlign: "text-top" }}
+                          />
+                        </MuiLink>
+                      </Grid>
+                    </Grid>
+                    <Box className="extraContent">
+                      <Typography variant="subtitle2" textAlign={"left"} p={1}>
+                        Samarthan Reddy is a Junior Associate with experience in
+                        civil court litigation and commercial disputes. He
+                        regularly assists in civil proceedings, interim
+                        applications, and trial matters, and is involved in
+                        legal research and drafting of petitions, applications,
+                        and pleadings, supporting effective representation
+                        across forums.
                       </Typography>
                     </Box>
                   </CardContent>
                 </HoverCard>
               </Grid>
             </Grid>
+
             <Grid
               container
               spacing={4}
@@ -606,7 +627,7 @@ function Company() {
                   <img src="/images/sagar.png" height={300} width={"auto"} />
                   <CardContent>
                     <Grid container>
-                      <Grid>
+                      {/* <Grid>
                         <MuiLink
                           href="#"
                           target="_blank"
@@ -623,7 +644,7 @@ function Company() {
                             style={{ verticalAlign: "text-top" }}
                           />
                         </MuiLink>
-                      </Grid>
+                      </Grid> */}
                       <Grid>
                         <MuiLink
                           href="mailto:sagar17@y7mail.com"
@@ -662,7 +683,7 @@ function Company() {
                   />
                   <CardContent>
                     <Grid container>
-                      <Grid>
+                      {/* <Grid>
                         <MuiLink
                           href="#"
                           target="_blank"
@@ -679,7 +700,7 @@ function Company() {
                             style={{ verticalAlign: "text-top" }}
                           />
                         </MuiLink>
-                      </Grid>
+                      </Grid> */}
                       <Grid>
                         <MuiLink
                           href="mailto:komtireddyamar78@gmail.com"
@@ -702,10 +723,7 @@ function Company() {
                   </CardContent>
                 </HoverCard>
               </Grid>
-              <Grid
-                // size={{ xs: 12, md: 6 }}
-                sx={{ justifyContent: "center", display: "flex" }}
-              >
+              <Grid sx={{ justifyContent: "center", display: "flex" }}>
                 <HoverCard>
                   <CardHeader
                     title="Siripaka Shankar"
@@ -714,7 +732,7 @@ function Company() {
                   <img src="/images/siripaka.png" height={300} width={"auto"} />
                   <CardContent>
                     <Grid container>
-                      <Grid>
+                      {/* <Grid>
                         <MuiLink
                           href="#"
                           target="_blank"
@@ -731,7 +749,7 @@ function Company() {
                             style={{ verticalAlign: "text-top" }}
                           />
                         </MuiLink>
-                      </Grid>
+                      </Grid> */}
                       <Grid>
                         <MuiLink
                           href="mailto:siripakashankar@gmail.com"
@@ -754,10 +772,7 @@ function Company() {
                   </CardContent>
                 </HoverCard>
               </Grid>
-              <Grid
-                // size={{ xs: 12, md: 6 }}
-                sx={{ justifyContent: "center", display: "flex" }}
-              >
+              <Grid sx={{ justifyContent: "center", display: "flex" }}>
                 <HoverCard>
                   <CardHeader
                     title="Murthy Kotamarthi"
@@ -766,7 +781,7 @@ function Company() {
                   <img src="/images/murthy.png" height={300} width={"auto"} />
                   <CardContent>
                     <Grid container>
-                      <Grid>
+                      {/* <Grid>
                         <MuiLink
                           href="#"
                           target="_blank"
@@ -783,7 +798,7 @@ function Company() {
                             style={{ verticalAlign: "text-top" }}
                           />
                         </MuiLink>
-                      </Grid>
+                      </Grid> */}
                       <Grid>
                         <MuiLink
                           href="mailto:siripakashankar@gmail.com"
@@ -804,6 +819,28 @@ function Company() {
                       </Grid>
                     </Grid>
                   </CardContent>
+                </HoverCard>
+              </Grid>
+            </Grid>
+
+            <Grid
+              container
+              spacing={4}
+              alignItems="center"
+              justifyContent={"center"}
+              my={10}
+            >
+              <Grid sx={{ justifyContent: "center", display: "flex" }}>
+                <HoverCard>
+                  <CardHeader title="Raju" subheader="Support Staff" />
+                  <img src="/images/raju.png" height={300} width={"auto"} />
+                </HoverCard>
+              </Grid>
+
+              <Grid sx={{ justifyContent: "center", display: "flex" }}>
+                <HoverCard>
+                  <CardHeader title="Shiva" subheader="Support Staff" />
+                  <img src="/images/shiva.png" height={300} width={"auto"} />
                 </HoverCard>
               </Grid>
             </Grid>

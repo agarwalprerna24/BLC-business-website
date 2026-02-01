@@ -3,11 +3,12 @@ import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-// import Expertise from "./pages/Expertise";
 import Contact from "./pages/Contact";
 import Mentor from "./pages/Mentor";
 import Company from "./pages/Company";
 import Newsletters from "./pages/Newsletters";
+import ScrollToTop from "./components/ScrollToTop";
+import NewsLetterContent from "./pages/NewsletterContent";
 
 const theme = createTheme({
   palette: {
@@ -50,6 +51,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Router>
+        <ScrollToTop />
         <div
           style={{
             display: "flex",
@@ -66,6 +68,7 @@ function App() {
               <Route path="/mentor" element={<Mentor />} />
               <Route path="/company" element={<Company />} />
               <Route path="/newsletters" element={<Newsletters />} />
+              <Route path="/newsletters/:id" element={<NewsLetterContent />} />
             </Routes>
           </main>
           <Footer />

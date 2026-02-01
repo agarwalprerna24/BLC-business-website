@@ -5,6 +5,7 @@ import {
   CardMedia,
   Typography,
   useTheme,
+  Link as MuiLink,
 } from "@mui/material";
 import Slider from "react-slick";
 import Hero from "../components/Hero";
@@ -70,7 +71,7 @@ const newsReports = [
     link: "https://timesofindia.indiatimes.com/city/hyderabad/dchl-debt-crisis-nclt-kick-starts-insolvency-process/articleshow/59674957.cms",
   },
   {
-    name: "₹1.4k crore loan default pushes GVK Energy into insolvency",
+    name: "₹1.4k crore loan default pushes firm into insolvency",
     platform: "May 8, 2025",
     image:
       "https://media.licdn.com/dms/image/v2/D5622AQHJlZO4kue2cg/feedshare-shrink_800/B56ZbI5OJ0H0Ao-/0/1747127166340?e=1770854400&v=beta&t=qeo52Zf9KBl6V2Bg3sP_gVkbqPXthBAy9aN_I03DvsY",
@@ -117,14 +118,31 @@ function Home() {
 
   const settings = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
     // cssEase: "linear",
     pauseOnHover: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -159,21 +177,38 @@ function Home() {
         <Box className="slider-container">
           <Slider {...settings}>
             {newsReports.map((item) => (
-              <Card sx={{ maxWidth: 345 }}>
+              <Card
+                sx={{
+                  maxWidth: 250,
+                  height: 300,
+                  position: "relative",
+                }}
+              >
                 <CardHeader
                   slotProps={{
                     title: {
-                      sx: { color: "primary.main", fontSize: "1.25rem" },
+                      sx: {
+                        color: "primary.main",
+                        fontSize: "1rem",
+                      },
+                    },
+                    subheader: {
+                      sx: { fontSize: "0.8rem" },
                     },
                   }}
-                  title={item.name}
+                  title={
+                    <MuiLink underline="hover" href={item.link}>
+                      {item.name}
+                    </MuiLink>
+                  }
                   subheader={item.platform}
                 />
                 <CardMedia
                   component="img"
                   height="194"
                   image={item.image}
-                  alt="Paella dish"
+                  alt="Alt"
+                  // style={{ position: "absolute", bottom: 0 }}
                 />
               </Card>
             ))}

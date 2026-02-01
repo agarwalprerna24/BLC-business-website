@@ -39,7 +39,7 @@ const policies = [
     icon: <IconUsers size={32} />,
     title: "Diversity & Inclusion",
     description:
-      "We are committed to maintaining an inclusive and respectful work environment. Our firm values diversity and ensures equal opportunity across all levels of theorganisation.",
+      "We are committed to maintaining an inclusive and respectful work environment. Our Chamber values diversity and ensures equal opportunity across all levels of theorganisation.",
   },
   {
     icon: <IconFileCheck size={32} />,
@@ -57,7 +57,7 @@ const policies = [
     icon: <IconHeart size={32} />,
     title: "Pro Bono Work",
     description:
-      "We recognise our responsibility towards the legal profession and society. The firm undertakes pro bono work and provides legal assistance to individuals and communities in need.",
+      "We recognise our responsibility towards the legal profession and society. The Chamber undertakes pro bono work and provides legal assistance to individuals and communities in need.",
   },
 ];
 
