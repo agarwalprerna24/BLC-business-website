@@ -7,8 +7,8 @@ import {
   CardContent,
   Chip,
   Button,
-  Link as MuiLink,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 import { IconCalendar, IconClock, IconArrowRight } from "@tabler/icons-react";
 
 const newsletters = [
@@ -187,8 +187,8 @@ function Newsletters() {
                   <Button
                     variant="text"
                     endIcon={<IconArrowRight size={18} />}
-                    component={MuiLink}
-                    href={`/newsletters/${index + 1}`}
+                    component={Link}
+                    to={`/newsletters/${index + 1}`}
                     sx={{
                       mt: 2,
                       justifyContent: "flex-start",
