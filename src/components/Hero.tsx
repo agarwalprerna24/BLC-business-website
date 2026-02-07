@@ -35,13 +35,13 @@ function Hero() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "1.5rem", md: "2.5rem", lg: "3rem" },
+                fontSize: { xs: "1.5rem", md: "2rem", lg: "2.5rem" },
                 fontWeight: 700,
                 mb: 1,
                 lineHeight: 1.2,
               }}
             >
-              Precision is our first argument
+              Precision is our first argument.
             </Typography>
             <Typography
               variant="h5"

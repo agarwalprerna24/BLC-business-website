@@ -67,14 +67,14 @@ const newsReports = [
     name: "DHCL debt crisis: NCLT kick starts insolvency process",
     platform: "Jul 20, 2017",
     image:
-      "https://static.toiimg.com/thumb/msid-59674965,imgsize-52229,width-400,height-225,resizemode-72/59674965.jpg",
+      "https://clipart-library.com/2024/law-images-free/law-images-free-1.jpg",
     link: "https://timesofindia.indiatimes.com/city/hyderabad/dchl-debt-crisis-nclt-kick-starts-insolvency-process/articleshow/59674957.cms",
   },
   {
     name: "₹1.4k crore loan default pushes firm into insolvency",
     platform: "May 8, 2025",
     image:
-      "https://media.licdn.com/dms/image/v2/D5622AQHJlZO4kue2cg/feedshare-shrink_800/B56ZbI5OJ0H0Ao-/0/1747127166340?e=1770854400&v=beta&t=qeo52Zf9KBl6V2Bg3sP_gVkbqPXthBAy9aN_I03DvsY",
+      "https://burst.shopifycdn.com/photos/judge-gavel-and-law-books.jpg?width=1000&format=pjpg&exif=0&iptc=0",
     link: "https://www.linkedin.com/posts/dishit-bhattacharjee-b5187780_it-was-a-pleasure-assisting-the-honorable-activity-7327982469062758400-Ax8o/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABE2zK0Bc3ePGHNPQF2WjRGUFd7SOWmT3rQ",
   },
 ];

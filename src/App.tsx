@@ -28,7 +28,8 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    // fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Garamond", "serif"',
     h1: {
       fontWeight: 700,
       letterSpacing: "-0.02em",

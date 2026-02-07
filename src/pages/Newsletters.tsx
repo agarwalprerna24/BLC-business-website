@@ -7,19 +7,21 @@ import {
   CardContent,
   Chip,
   Button,
+  Link as MuiLink,
 } from "@mui/material";
 import { IconCalendar, IconClock, IconArrowRight } from "@tabler/icons-react";
 
 const newsletters = [
   {
-    title: "New Data Protection Regulations: What Businesses Need to Know",
+    title:
+      "Supreme Court Reaffirms Limited Judicial Interference in Arbitral Awards",
     date: "Feb, 2026",
-    author: "Adv. Amit Kumar",
+    author: "Dishit Bhattacharjee",
     // category: "Technology Law",
     readTime: "8 min read",
     excerpt:
-      "The recent amendments to data protection regulations have significant implications for businesses handling personal data. This newsletter explores the key changes and compliance requirements that organizations must address.",
-    tags: ["Data Protection", "Compliance", "Privacy Law"],
+      "The Supreme Court has reiterated that an arbitral award cannot be set aside merely because another interpretation of the contract is possible. The Apex Court in Jan De Nul Dredging India Pvt. Ltd. v. Tuticorin Port Trust (2026 INSC 34) emphasised that once an arbitral tribunal adopts a plausible and reasoned interpretation of contractual clauses, courts exercising powers under Sections 34 and 37 of the Arbitration and Conciliation Act, 1996 cannot re-appreciate evidence or substitute their own views.",
+    tags: ["Arbitration", "Judicial Interference", "Contract Interpretation"],
   },
 ];
 
@@ -90,18 +92,6 @@ function Newsletters() {
                     flexDirection: "column",
                   }}
                 >
-                  {/* <Chip
-                    label={newsletter.category}
-                    size="small"
-                    sx={{
-                      bgcolor: "primary.light",
-                      color: "white",
-                      fontWeight: 600,
-                      mb: 2,
-                      alignSelf: "flex-start",
-                    }}
-                  /> */}
-
                   <Typography
                     variant="h5"
                     sx={{
@@ -197,6 +187,8 @@ function Newsletters() {
                   <Button
                     variant="text"
                     endIcon={<IconArrowRight size={18} />}
+                    component={MuiLink}
+                    href={`/newsletters/${index + 1}`}
                     sx={{
                       mt: 2,
                       justifyContent: "flex-start",

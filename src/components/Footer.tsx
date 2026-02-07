@@ -12,7 +12,7 @@ import {
   Button,
   DialogContentText,
 } from "@mui/material";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   IconMail,
   IconPhone,
@@ -23,17 +23,14 @@ import { useEffect, useState } from "react";
 
 function Footer() {
   const [open, setOpen] = useState(false);
-  const { pathname } = useLocation();
 
   const handleClose = () => {
     setOpen(false);
   };
 
   useEffect(() => {
-    if (pathname === "/") {
-      setOpen(true);
-    }
-  }, [pathname]);
+    setOpen(true);
+  }, []);
 
   return (
     <Box
