@@ -57,21 +57,21 @@ const newsReports = [
     link: "https://ibclaw.in/union-bank-of-india-vs-canara-bank-and-anr-nclt-hyderabad-bench/",
   },
   {
-    name: "Namas Madhucon goes bankrupt, NCLT initiates insolvency process",
+    name: "Newspaper: The Times of India Date: December 10, 2023",
     platform: "Dec 10, 2023",
     image:
       "https://static.toiimg.com/thumb/msid-105871489,imgsize-643868,width-400,height-225,resizemode-72/105871489.jpg",
     link: "https://timesofindia.indiatimes.com/city/hyderabad/namas-madhucon-goes-bankrupt-nclt-initiates-insolvency-process/articleshow/105871489.cms",
   },
   {
-    name: "DHCL debt crisis: NCLT kick starts insolvency process",
+    name: "Newspaper: The Times of India Date: July 20, 2017",
     platform: "Jul 20, 2017",
     image:
       "https://clipart-library.com/2024/law-images-free/law-images-free-1.jpg",
     link: "https://timesofindia.indiatimes.com/city/hyderabad/dchl-debt-crisis-nclt-kick-starts-insolvency-process/articleshow/59674957.cms",
   },
   {
-    name: "₹1.4k crore loan default pushes firm into insolvency",
+    name: "Newspaper: The Times of India, Hyderabad Date: May 8, 2025",
     platform: "May 8, 2025",
     image:
       "https://burst.shopifycdn.com/photos/judge-gavel-and-law-books.jpg?width=1000&format=pjpg&exif=0&iptc=0",
