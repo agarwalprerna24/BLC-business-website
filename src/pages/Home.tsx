@@ -202,6 +202,7 @@ function Home() {
                     </MuiLink>
                   }
                   subheader={item.platform}
+                  target="_blank"
                 />
                 <CardMedia
                   component="img"
