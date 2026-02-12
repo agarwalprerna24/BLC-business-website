@@ -17,7 +17,6 @@ const newsletters = [
       "Supreme Court Reaffirms Limited Judicial Interference in Arbitral Awards",
     date: "Feb, 2026",
     author: "Dishit Bhattacharjee",
-    // category: "Technology Law",
     readTime: "8 min read",
     excerpt:
       "The Supreme Court has reiterated that an arbitral award cannot be set aside merely because another interpretation of the contract is possible. The Apex Court in Jan De Nul Dredging India Pvt. Ltd. v. Tuticorin Port Trust (2026 INSC 34) emphasised that once an arbitral tribunal adopts a plausible and reasoned interpretation of contractual clauses, courts exercising powers under Sections 34 and 37 of the Arbitration and Conciliation Act, 1996 cannot re-appreciate evidence or substitute their own views.",
@@ -99,7 +98,11 @@ function Newsletters() {
                       mb: 2,
                       lineHeight: 1.3,
                       minHeight: "3.6em",
+                      textDecoration: "none",
+                      color: "primary.main",
                     }}
+                    component={Link}
+                    to={`/newsletters/${index + 1}`}
                   >
                     {newsletter.title}
                   </Typography>
@@ -143,15 +146,6 @@ function Newsletters() {
                       borderColor: "divider",
                     }}
                   >
-                    {/* <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                      <IconUser size={16} />
-                      <Typography
-                        variant="body2"
-                        sx={{ color: "text.secondary", fontSize: "0.875rem" }}
-                      >
-                        {newsletter.author}
-                      </Typography>
-                    </Box> */}
                     <Box
                       sx={{
                         display: "flex",

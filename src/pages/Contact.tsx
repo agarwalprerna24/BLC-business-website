@@ -7,6 +7,8 @@ import {
   TextField,
   Button,
 } from "@mui/material";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
 import { useState } from "react";
 
 function ContactUs() {
@@ -17,9 +19,52 @@ function ContactUs() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [open, setOpen] = useState(false);
+  const [result, setResult] = useState("success");
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleClose = (e: any, reason: any) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpen(false);
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const form = new FormData(e.target as any);
+    form.append("access_key", "d1dec9b7-f0de-4ec5-946e-1693237b2ab2");
+    form.append("from_name", "Bhattacharjee Law Chambers - InMail");
+    form.append("subject", "You have a notification from your website");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: form,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setOpen(true);
+        setResult("success");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        setOpen(true);
+        setResult("error");
+      }
+    } catch (err) {
+      setOpen(true);
+      setResult("error");
+    }
   };
 
   const handleChange = (
@@ -82,7 +127,43 @@ function ContactUs() {
           >
             Get in Touch
           </Typography>
+          <Typography
+            variant="body1"
+            color="#555555"
+            textAlign={"center"}
+            mb={2}
+            width={"80%"}
+            mx={"auto"}
+          >
+            We welcome enquiries from clients, businesses, and law graduates.
+            Applications for internships are also invited, interested parties
+            can engage further by sending a mail to info@dbadvocate.com.
+          </Typography>
 
+          <Snackbar
+            id="fucking snackbar"
+            anchorOrigin={{ vertical: "top", horizontal: "center" }}
+            open={open}
+            onClose={handleClose}
+            key={"top-center"}
+            autoHideDuration={5000}
+          >
+            <Alert
+              severity={result as "error" | "success"}
+              sx={{
+                width: "100%",
+                border: `1px solid ${result === "error" ? "red" : "green"}`,
+              }}
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              onClose={handleClose as any}
+            >
+              <Typography fontSize={"lg"}>
+                {result === "error"
+                  ? "Failed to submit form"
+                  : "Form submitted successfully"}
+              </Typography>
+            </Alert>
+          </Snackbar>
           <Paper elevation={2} sx={{ p: { xs: 3, md: 5 } }}>
             <form onSubmit={handleSubmit}>
               <Grid container spacing={3}>
@@ -116,7 +197,6 @@ function ContactUs() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    required
                     variant="outlined"
                   />
                 </Grid>

@@ -1,4 +1,5 @@
-import { Box, Container, Grid, Typography, Button, Link } from "@mui/material";
+import { Box, Container, Grid, Typography, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -59,7 +60,8 @@ function Hero() {
               <Button
                 variant="contained"
                 size="medium"
-                href="/contact"
+                component={Link}
+                to="/contact"
                 sx={{
                   bgcolor: "secondary.main",
                   color: "primary.dark",
@@ -77,7 +79,7 @@ function Hero() {
                 variant="outlined"
                 size="medium"
                 component={Link}
-                href="/expertise"
+                to="/company"
                 sx={{
                   borderColor: "white",
                   color: "white",
@@ -90,7 +92,7 @@ function Hero() {
                   },
                 }}
               >
-                Our Expertise
+                Our Team
               </Button>
             </Box>
           </Grid>
