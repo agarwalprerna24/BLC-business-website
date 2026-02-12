@@ -197,12 +197,11 @@ function Home() {
                     },
                   }}
                   title={
-                    <MuiLink underline="hover" href={item.link}>
+                    <MuiLink underline="hover" href={item.link} target="_blank">
                       {item.name}
                     </MuiLink>
                   }
                   subheader={item.platform}
-                  target="_blank"
                 />
                 <CardMedia
                   component="img"
