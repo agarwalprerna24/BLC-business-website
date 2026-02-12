@@ -821,6 +821,41 @@ function Company() {
                   </CardContent>
                 </HoverCard>
               </Grid>
+              <Grid sx={{ justifyContent: "center", display: "flex" }}>
+                <HoverCard>
+                  <CardHeader
+                    title="P. Rajeshwari"
+                    subheader="Associate (DRT)"
+                  />
+                  <img
+                    src="/images/rajeshwari.png"
+                    height={300}
+                    width={"auto"}
+                  />
+                  {/* <CardContent>
+                    <Grid container>
+                      <Grid>
+                        <MuiLink
+                          href="mailto:siripakashankar@gmail.com"
+                          target="_blank"
+                          sx={{
+                            opacity: 0.8,
+                            "&:hover": { opacity: 1 },
+                            transition: "opacity 0.3s",
+                            // mx: "0.25rem",
+                            verticalAlign: "text-top",
+                          }}
+                        >
+                          <IconMail
+                            size={24}
+                            style={{ verticalAlign: "text-top" }}
+                          />
+                        </MuiLink>
+                      </Grid>
+                    </Grid>
+                  </CardContent> */}
+                </HoverCard>
+              </Grid>
             </Grid>
 
             <Grid
