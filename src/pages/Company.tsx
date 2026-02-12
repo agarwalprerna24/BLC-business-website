@@ -9,6 +9,7 @@ import {
   CardHeader,
   useTheme,
   styled,
+  Button,
 } from "@mui/material";
 import { IconMail, IconBrandLinkedin } from "@tabler/icons-react";
 
@@ -408,6 +409,66 @@ function Company() {
                         advisory and drafting of business agreements.
                       </Typography>
                     </Box>
+                  </CardContent>
+                </HoverCard>
+              </Grid>
+              <Grid sx={{ justifyContent: "center", display: "flex" }}>
+                <HoverCard>
+                  <CardHeader
+                    title="P. Rajeshwari"
+                    subheader="Associate (DRT)"
+                  />
+                  <img
+                    src="/images/rajeshwari.png"
+                    height={350}
+                    width={"auto"}
+                  />
+                  <CardContent>
+                    <Grid container>
+                      <Grid>
+                        <Button
+                          href="#"
+                          target="_blank"
+                          disabled
+                          style={{ color: "transparent" }}
+                          sx={{
+                            opacity: 0.8,
+                            "&:hover": { opacity: 1 },
+                            transition: "opacity 0.3s",
+                            mx: "0.25rem",
+                            verticalAlign: "text-top",
+                            background: "transparent",
+                          }}
+                        >
+                          <IconBrandLinkedin
+                            size={24}
+                            style={{ verticalAlign: "text-top" }}
+                          />
+                        </Button>
+                      </Grid>
+
+                      <Grid>
+                        <Button
+                          href="#"
+                          target="_blank"
+                          disabled
+                          style={{ color: "transparent" }}
+                          sx={{
+                            opacity: 0.8,
+                            "&:hover": { opacity: 1 },
+                            transition: "opacity 0.3s",
+                            // mx: "0.25rem",
+                            verticalAlign: "text-top",
+                            background: "transparent",
+                          }}
+                        >
+                          <IconMail
+                            size={24}
+                            style={{ verticalAlign: "text-top" }}
+                          />
+                        </Button>
+                      </Grid>
+                    </Grid>
                   </CardContent>
                 </HoverCard>
               </Grid>
@@ -819,41 +880,6 @@ function Company() {
                       </Grid>
                     </Grid>
                   </CardContent>
-                </HoverCard>
-              </Grid>
-              <Grid sx={{ justifyContent: "center", display: "flex" }}>
-                <HoverCard>
-                  <CardHeader
-                    title="P. Rajeshwari"
-                    subheader="Associate (DRT)"
-                  />
-                  <img
-                    src="/images/rajeshwari.png"
-                    height={300}
-                    width={"auto"}
-                  />
-                  {/* <CardContent>
-                    <Grid container>
-                      <Grid>
-                        <MuiLink
-                          href="mailto:siripakashankar@gmail.com"
-                          target="_blank"
-                          sx={{
-                            opacity: 0.8,
-                            "&:hover": { opacity: 1 },
-                            transition: "opacity 0.3s",
-                            // mx: "0.25rem",
-                            verticalAlign: "text-top",
-                          }}
-                        >
-                          <IconMail
-                            size={24}
-                            style={{ verticalAlign: "text-top" }}
-                          />
-                        </MuiLink>
-                      </Grid>
-                    </Grid>
-                  </CardContent> */}
                 </HoverCard>
               </Grid>
             </Grid>
