@@ -214,7 +214,7 @@ function Company() {
               spacing={4}
               alignItems="center"
               justifyContent={"center"}
-              my={10}
+              mb={10}
             >
               <Grid sx={{ justifyContent: "center", display: "flex" }}>
                 <HoverCard>
@@ -224,7 +224,7 @@ function Company() {
                   />
                   <img
                     src="/images/prasoon_das.png"
-                    height={400}
+                    height={300}
                     width={"auto"}
                   />
                   <CardContent>
@@ -287,7 +287,7 @@ function Company() {
                   />
                   <img
                     src="/images/vishwajit_khyatam.png"
-                    height={400}
+                    height={300}
                     width={"auto"}
                   />
                   <CardContent>
@@ -350,16 +350,13 @@ function Company() {
               alignItems="center"
               justifyContent={"center"}
             >
-              <Grid
-                size={{ xs: 12, md: 6 }}
-                sx={{ justifyContent: "center", display: "flex" }}
-              >
+              <Grid sx={{ justifyContent: "center", display: "flex" }}>
                 <HoverCard>
                   <CardHeader
                     title="Sanjana Proddatoori"
                     subheader="Associate"
                   />
-                  <img src="/images/sanjana.png" height={350} width={"auto"} />
+                  <img src="/images/sanjana.png" height={275} width={"auto"} />
                   <CardContent>
                     <Grid container>
                       <Grid>
@@ -420,7 +417,7 @@ function Company() {
                   />
                   <img
                     src="/images/rajeshwari.png"
-                    height={350}
+                    height={275}
                     width={"auto"}
                   />
                   <CardContent>
@@ -487,7 +484,7 @@ function Company() {
                     title="Ashutosh Singh"
                     subheader="Junior Associate"
                   />
-                  <img src="/images/ashutosh.png" height={300} width={"auto"} />
+                  <img src="/images/ashutosh.png" height={250} width={"auto"} />
                   <CardContent>
                     <Grid container>
                       <Grid>
@@ -548,7 +545,7 @@ function Company() {
                   />
                   <img
                     src="/images/rudhraksh.png"
-                    height={300}
+                    height={250}
                     width={"auto"}
                   />
                   <CardContent>
@@ -611,7 +608,7 @@ function Company() {
                   />
                   <img
                     src="/images/samarthan.png"
-                    height={300}
+                    height={250}
                     width={"auto"}
                   />
                   <CardContent>
@@ -685,7 +682,7 @@ function Company() {
                     title="Somnath Sutradhar"
                     subheader="Office Manager"
                   />
-                  <img src="/images/sagar.png" height={300} width={"auto"} />
+                  <img src="/images/sagar.png" height={240} width={"auto"} />
                   <CardContent>
                     <Grid container>
                       {/* <Grid>
@@ -735,11 +732,16 @@ function Company() {
                 <HoverCard>
                   <CardHeader
                     title="K. Amarender Reddy"
-                    subheader="Office Clerk (High Court and NCLT)"
+                    subheader="Office Clerk (High Court & NCLT)"
+                    slotProps={{
+                      subheader: {
+                        style: { whiteSpace: "nowrap" },
+                      },
+                    }}
                   />
                   <img
                     src="/images/amarender.png"
-                    height={300}
+                    height={240}
                     width={"auto"}
                   />
                   <CardContent>
@@ -790,7 +792,7 @@ function Company() {
                     title="Siripaka Shankar"
                     subheader="Office Clerk (Civil Courts)"
                   />
-                  <img src="/images/siripaka.png" height={300} width={"auto"} />
+                  <img src="/images/siripaka.png" height={240} width={"auto"} />
                   <CardContent>
                     <Grid container>
                       {/* <Grid>
@@ -839,7 +841,7 @@ function Company() {
                     title="Murthy Kotamarthi"
                     subheader="Office Clerk (DRT)"
                   />
-                  <img src="/images/murthy.png" height={300} width={"auto"} />
+                  <img src="/images/murthy.png" height={240} width={"auto"} />
                   <CardContent>
                     <Grid container>
                       {/* <Grid>
@@ -894,14 +896,14 @@ function Company() {
               <Grid sx={{ justifyContent: "center", display: "flex" }}>
                 <HoverCard>
                   <CardHeader title="Raju" subheader="Support Staff" />
-                  <img src="/images/raju.png" height={300} width={"auto"} />
+                  <img src="/images/raju.png" height={220} width={"auto"} />
                 </HoverCard>
               </Grid>
 
               <Grid sx={{ justifyContent: "center", display: "flex" }}>
                 <HoverCard>
                   <CardHeader title="Shiva" subheader="Support Staff" />
-                  <img src="/images/shiva.png" height={300} width={"auto"} />
+                  <img src="/images/shiva.png" height={220} width={"auto"} />
                 </HoverCard>
               </Grid>
             </Grid>

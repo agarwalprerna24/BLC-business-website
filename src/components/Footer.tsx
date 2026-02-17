@@ -140,7 +140,7 @@ function Footer() {
                       style={{ marginTop: 2, flexShrink: 0 }}
                     />
                     <MuiLink
-                      href="https://maps.app.goo.gl/NvPeX1hN6toxa3NcA"
+                      href="https://maps.app.goo.gl/2YxrWobmqMBE2R2n7?g_st=aw"
                       underline="none"
                       style={{ color: "unset" }}
                       target="_blank"

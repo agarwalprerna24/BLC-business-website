@@ -1,6 +1,5 @@
 export default {
-  title:
-    "Supreme Court Reaffirms Limited Judicial Interference in Arbitral Awards",
+  title: "FEB | 2026 | ISSUE #1",
   content: [
     {
       header:

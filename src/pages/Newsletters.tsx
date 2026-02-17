@@ -13,8 +13,7 @@ import { IconCalendar, IconClock, IconArrowRight } from "@tabler/icons-react";
 
 const newsletters = [
   {
-    title:
-      "Supreme Court Reaffirms Limited Judicial Interference in Arbitral Awards",
+    title: "FEB | 2026 | ISSUE #1",
     date: "Feb, 2026",
     author: "Dishit Bhattacharjee",
     readTime: "8 min read",
@@ -97,7 +96,6 @@ function Newsletters() {
                       fontWeight: 600,
                       mb: 2,
                       lineHeight: 1.3,
-                      minHeight: "3.6em",
                       textDecoration: "none",
                       color: "primary.main",
                     }}
