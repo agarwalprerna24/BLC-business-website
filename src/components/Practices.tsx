@@ -69,7 +69,7 @@ function Practices() {
       }}
       style={{ textAlign: "center" }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" id={"expertise"}>
         <Typography
           variant="h2"
           sx={{

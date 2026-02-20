@@ -58,7 +58,7 @@ function Mentor() {
               style={{
                 float: "left",
                 marginRight: "2rem",
-                marginBottom: "2rem",
+                marginBottom: "1rem",
                 borderRadius: "25px",
               }}
             />

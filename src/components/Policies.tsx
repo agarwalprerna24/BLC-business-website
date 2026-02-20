@@ -167,7 +167,7 @@ function Policies() {
                 <IconBuilding size={48} />
               </Box>
               <Typography variant="h4" sx={{ fontWeight: 700, mb: 2 }}>
-                Our Firm
+                Our Chambers
               </Typography>
               <Typography variant="body1" sx={{ mb: 3, lineHeight: 1.8 }}>
                 Learn more about our team of experienced partners, our values,
@@ -185,7 +185,7 @@ function Policies() {
                   },
                 }}
               >
-                Explore Company
+                Explore Chambers
               </Button>
             </CardContent>
           </Card>

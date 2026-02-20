@@ -99,106 +99,114 @@ function Company() {
         </Container>
       </Box>
 
-      <Container maxWidth={false} sx={{ p: { xs: 8, md: 10 } }}>
-        <Typography
-          variant="h2"
-          sx={{
-            fontSize: { xs: "2rem", md: "2.5rem" },
-            fontWeight: 700,
-            mb: 1,
-            color: "primary.main",
-          }}
-        >
-          Dishit Bhattacharjee
-        </Typography>
-        <Typography
-          variant="h5"
-          sx={{
-            // fontSize: { xs: "2rem", md: "2.5rem" },
-            fontWeight: 500,
-            mb: 3,
-            color: "primary.main",
-          }}
-        >
-          Founder
-          <MuiLink
-            href="https://www.linkedin.com/company/battacharjee-law-chambers/about/?viewAsMember=true"
-            target="_blank"
-            sx={{
-              opacity: 0.8,
-              "&:hover": { opacity: 1 },
-              transition: "opacity 0.3s",
-              mx: "0.25rem",
-              verticalAlign: "text-top",
-            }}
-          >
-            <IconBrandLinkedin
-              size={24}
-              style={{ verticalAlign: "text-top" }}
-            />
-          </MuiLink>
-          <MuiLink
-            href="mailto:dishitbhattacharjee@gmail.com"
-            target="_blank"
-            sx={{
-              opacity: 0.8,
-              "&:hover": { opacity: 1 },
-              transition: "opacity 0.3s",
-              // mx: "0.25rem",
-              verticalAlign: "text-top",
-            }}
-          >
-            <IconMail size={24} style={{ verticalAlign: "text-top" }} />
-          </MuiLink>
-        </Typography>
-
-        <Grid container style={{ display: "inline-block" }}>
-          <img
-            src="/images/dishit.png"
-            width="300"
-            style={{ borderRadius: "25px", float: "left", marginRight: "2rem" }}
-          />
+      <Box sx={{ py: { xs: 8, md: 10 }, px: { xs: 0, md: 10 } }}>
+        <Container maxWidth={false}>
           <Typography
-            variant="body1"
+            variant="h2"
             sx={{
-              mb: 2,
-              fontSize: "1.1rem",
-              lineHeight: 1.8,
-              textAlign: "justify",
+              fontSize: { xs: "2rem", md: "2.5rem" },
+              fontWeight: 700,
+              mb: 1,
+              color: "primary.main",
             }}
           >
-            Dishit Bhattacharjee is an advocate with over thirteen years of
-            distinguished experience in litigation, dispute resolution, and
-            corporate advisory practice. An alumnus of the University College of
-            Law, Osmania University, Hyderabad, he advises a diverse clientele
-            comprising corporations, financial institutions, start-ups, and
-            individual clients on commercial, corporate, banking, arbitration,
-            and civil matters, with a practice defined by strategic clarity and
-            commercially sound legal resolutions. He frequently appears before
-            the High Court of Telangana and has extensive experience
-            representing clients before the National Company Law Tribunal
-            (NCLT), Debt Recovery Tribunals (DRT), Commercial Courts, Civil
-            Courts, and Family Courts. His litigation portfolio spans high-value
-            commercial disputes, recovery proceedings, insolvency and
-            restructuring matters, arbitration, and constitutional remedies, and
-            his practice also spans across trial courts and specialised
-            tribunals across jurisdictions. <br />
-            Mr. Bhattacharjee also maintains a robust corporate and commercial
-            advisory practice, negotiating, and reviewing complex legal
-            documentation including investment and shareholder arrangements,
-            joint ventures, employment contracts, loan and security
-            documentation, debt restructuring agreements, and technology and
-            commercial contracts, while also advising on regulatory compliances
-            and transactions. His work further extends to domestic and
-            international arbitration, non-litigation dispute resolution,
-            employment and family disputes, and real estate due diligence,
-            combining longstanding legal heritage with a modern,
-            solution-oriented approach. He also advises banks, financial
-            institutions, and asset reconstruction companies on and heads this
-            Chamber. He is regarded for his strategic insight and advocacy.
+            Dishit Bhattacharjee
           </Typography>
-        </Grid>
-      </Container>
+          <Typography
+            variant="h5"
+            sx={{
+              // fontSize: { xs: "2rem", md: "2.5rem" },
+              fontWeight: 500,
+              mb: 3,
+              color: "primary.main",
+            }}
+          >
+            Founder
+            <MuiLink
+              href="https://www.linkedin.com/company/battacharjee-law-chambers/about/?viewAsMember=true"
+              target="_blank"
+              sx={{
+                opacity: 0.8,
+                "&:hover": { opacity: 1 },
+                transition: "opacity 0.3s",
+                mx: "0.25rem",
+                verticalAlign: "text-top",
+              }}
+            >
+              <IconBrandLinkedin
+                size={24}
+                style={{ verticalAlign: "text-top" }}
+              />
+            </MuiLink>
+            <MuiLink
+              href="mailto:dishitbhattacharjee@gmail.com"
+              target="_blank"
+              sx={{
+                opacity: 0.8,
+                "&:hover": { opacity: 1 },
+                transition: "opacity 0.3s",
+                // mx: "0.25rem",
+                verticalAlign: "text-top",
+              }}
+            >
+              <IconMail size={24} style={{ verticalAlign: "text-top" }} />
+            </MuiLink>
+          </Typography>
+
+          <Grid container style={{ display: "inline-block" }}>
+            <img
+              src="/images/dishit.png"
+              width="300"
+              style={{
+                borderRadius: "25px",
+                float: "left",
+                marginRight: "2rem",
+                marginBottom: "1rem",
+              }}
+            />
+            <Typography
+              variant="body1"
+              sx={{
+                mb: 2,
+                fontSize: "1.1rem",
+                lineHeight: 1.8,
+                textAlign: "justify",
+              }}
+            >
+              Dishit Bhattacharjee is an advocate with over thirteen years of
+              distinguished experience in litigation, dispute resolution, and
+              corporate advisory practice. An alumnus of the University College
+              of Law, Osmania University, Hyderabad, he advises a diverse
+              clientele comprising corporations, financial institutions,
+              start-ups, and individual clients on commercial, corporate,
+              banking, arbitration, and civil matters, with a practice defined
+              by strategic clarity and commercially sound legal resolutions. He
+              frequently appears before the High Court of Telangana and has
+              extensive experience representing clients before the National
+              Company Law Tribunal (NCLT), Debt Recovery Tribunals (DRT),
+              Commercial Courts, Civil Courts, and Family Courts. His litigation
+              portfolio spans high-value commercial disputes, recovery
+              proceedings, insolvency and restructuring matters, arbitration,
+              and constitutional remedies, and his practice also spans across
+              trial courts and specialised tribunals across jurisdictions.{" "}
+              <br />
+              Mr. Bhattacharjee also maintains a robust corporate and commercial
+              advisory practice, negotiating, and reviewing complex legal
+              documentation including investment and shareholder arrangements,
+              joint ventures, employment contracts, loan and security
+              documentation, debt restructuring agreements, and technology and
+              commercial contracts, while also advising on regulatory
+              compliances and transactions. His work further extends to domestic
+              and international arbitration, non-litigation dispute resolution,
+              employment and family disputes, and real estate due diligence,
+              combining longstanding legal heritage with a modern,
+              solution-oriented approach. He also advises banks, financial
+              institutions, and asset reconstruction companies on and heads this
+              Chamber. He is regarded for his strategic insight and advocacy.
+            </Typography>
+          </Grid>
+        </Container>
+      </Box>
 
       <Box
         sx={{

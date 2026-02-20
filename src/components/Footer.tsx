@@ -13,6 +13,7 @@ import {
   DialogContentText,
 } from "@mui/material";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import {
   IconMail,
   IconPhone,
@@ -85,10 +86,11 @@ function Footer() {
               >
                 Home
               </MuiLink>
-              <MuiLink
-                component={Link}
-                to="/expertise"
-                sx={{
+              <HashLink
+                // component={Link}
+                smooth
+                to="/#expertise"
+                style={{
                   color: "white",
                   textDecoration: "none",
                   opacity: 0.8,
@@ -96,7 +98,7 @@ function Footer() {
                 }}
               >
                 Expertise
-              </MuiLink>
+              </HashLink>
               <MuiLink
                 component={Link}
                 to="/company"
@@ -107,7 +109,7 @@ function Footer() {
                   "&:hover": { opacity: 1, textDecoration: "underline" },
                 }}
               >
-                Company
+                Team
               </MuiLink>
               <MuiLink
                 component={Link}
@@ -146,7 +148,14 @@ function Footer() {
                       target="_blank"
                     >
                       <Typography variant="body2" sx={{ opacity: 0.8 }}>
-                        Bhattacharjee Law Chambers <br />
+                        <span style={{ textDecoration: "underline" }}>
+                          Bhattacharjee Law Chambers{" "}
+                        </span>{" "}
+                        <br />
+                        <span style={{ textDecoration: "underline" }}>
+                          Hyderabad Office{" "}
+                        </span>
+                        <br />
                         Flat No. 101, 1st Floor, Nirman Towers <br />
                         38 East Marredpally
                         <br />
@@ -175,7 +184,7 @@ function Footer() {
                     >
                       <Typography variant="body2" sx={{ opacity: 0.8 }}>
                         <span style={{ textDecoration: "underline" }}>
-                          Transit Office (Delhi)
+                          Transit Office at New Delhi
                         </span>{" "}
                         <br />
                         M-19A South Extension Part-II, <br />

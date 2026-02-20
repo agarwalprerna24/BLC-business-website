@@ -77,6 +77,13 @@ const newsReports = [
       "https://burst.shopifycdn.com/photos/judge-gavel-and-law-books.jpg?width=1000&format=pjpg&exif=0&iptc=0",
     link: "https://www.linkedin.com/posts/dishit-bhattacharjee-b5187780_it-was-a-pleasure-assisting-the-honorable-activity-7327982469062758400-Ax8o/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABE2zK0Bc3ePGHNPQF2WjRGUFd7SOWmT3rQ",
   },
+  {
+    name: "Mortgage and Charge Extinguish Only Upon Full Payment or Lawful Extinguishment of Redemption Rights — NCLT Hyderabad",
+    platform: "Dec 25, 2025",
+    link: "https://ibclaw.in/vamsi-kambhammettu-vs-stressed-assets-stabilisation-fund-sasf-as-replaced-by-omkara-assets-reconstruction-pvt-ltd-nclt-hyderabad-bench/",
+    image:
+      "https://img.freepik.com/free-photo/gavel-scales-justice-law-books_23-2151998158.jpg?semt=ais_user_personalization&w=740&q=80",
+  },
 ];
 
 function Home() {
@@ -120,9 +127,10 @@ function Home() {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
-    // cssEase: "linear",
+    cssEase: "linear",
+    speed: 4000,
     pauseOnHover: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -190,6 +198,7 @@ function Home() {
                       sx: {
                         color: "primary.main",
                         fontSize: "1rem",
+                        textAlign: "justify",
                       },
                     },
                     subheader: {
