@@ -1,6 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import newsletters from "../newsletters";
 
 export default function NewsLetterContent() {
   const { id } = useParams();
@@ -10,23 +11,16 @@ export default function NewsLetterContent() {
   const [err, setErr] = useState<string | null>(null);
 
   useEffect(() => {
-    let cancelled = false;
-    setData(null);
-    setErr(null);
-
-    // Important: keep the path "pattern" stable; bundlers need to see it.
-    import(`../newsletters/${id}.ts`)
-      .then((mod) => {
-        if (!cancelled) setData(mod.default);
-      })
-      .catch((e) => {
-        if (!cancelled) setErr(e instanceof Error ? e.message : String(e));
-      });
-
-    return () => {
-      cancelled = true;
-    };
+    console.log(id);
+    console.log(newsletters[id as unknown as keyof typeof newsletters]);
+    if (id && newsletters[id as unknown as keyof typeof newsletters]) {
+      setData(newsletters[id as unknown as keyof typeof newsletters]);
+    } else {
+      setErr("Newsletter not found");
+    }
   }, [id]);
+
+  const Component = data?.component;
 
   if (!data || err) return null;
 
@@ -67,38 +61,7 @@ export default function NewsLetterContent() {
         </Container>
       </Box>
 
-      {/*  eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-      {data.content.map((item: any) => (
-        <Container
-          maxWidth={false}
-          sx={{ px: { xs: 8, md: 10 }, my: { xs: 6, md: 8 } }}
-        >
-          <Typography
-            variant="h3"
-            sx={{
-              fontSize: { xs: "1.5rem", md: "2rem" },
-              fontWeight: 700,
-              mb: 1,
-              color: "primary.main",
-            }}
-          >
-            {item.header}
-          </Typography>
-          <Typography
-            variant="body1"
-            sx={{
-              mb: 1,
-              fontSize: "1.1rem",
-              lineHeight: 1.8,
-              textAlign: "justify",
-            }}
-          >
-            {item.data.map((paragraph: string) => (
-              <p>{paragraph}</p>
-            ))}
-          </Typography>
-        </Container>
-      ))}
+      {Component && <Component />}
     </Box>
   );
 }

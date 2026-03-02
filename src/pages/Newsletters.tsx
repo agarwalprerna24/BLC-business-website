@@ -21,6 +21,15 @@ const newsletters = [
       "The Supreme Court has reiterated that an arbitral award cannot be set aside merely because another interpretation of the contract is possible. The Apex Court in Jan De Nul Dredging India Pvt. Ltd. v. Tuticorin Port Trust (2026 INSC 34) emphasised that once an arbitral tribunal adopts a plausible and reasoned interpretation of contractual clauses, courts exercising powers under Sections 34 and 37 of the Arbitration and Conciliation Act, 1996 cannot re-appreciate evidence or substitute their own views.",
     tags: ["Arbitration", "Judicial Interference", "Contract Interpretation"],
   },
+  {
+    title: "MAR | 2026 | ISSUE #2",
+    date: "Mar, 2026",
+    author: "Dishit Bhattacharjee",
+    readTime: "8 min read",
+    excerpt:
+      "For many years, labour compliance in India meant navigating a maze. Twenty-nine central labour laws operated independently. Definitions differed across statutes. Registers overlapped. Multiple authorities required filings on different timelines. Even disciplined and well-intentioned employers could find themselves liable for noncompliance.",
+    tags: ["Labour Law", "Compliance", "Employer Obligations"],
+  },
 ];
 
 function Newsletters() {
