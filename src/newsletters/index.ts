@@ -1,5 +1,6 @@
 import Newsletter1 from "./1";
 import Newsletter2 from "./2";
+import Newsletter3 from "./3";
 
 const newsletters: Record<
   number,
@@ -12,6 +13,10 @@ const newsletters: Record<
   "2": {
     title: "MAR | 2026 | ISSUE #2",
     component: Newsletter2,
+  },
+  "3": {
+    title: "APR | 2026 | ISSUE #3",
+    component: Newsletter3,
   },
 };
 

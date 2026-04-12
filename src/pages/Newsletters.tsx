@@ -30,6 +30,15 @@ const newsletters = [
       "For many years, labour compliance in India meant navigating a maze. Twenty-nine central labour laws operated independently. Definitions differed across statutes. Registers overlapped. Multiple authorities required filings on different timelines. Even disciplined and well-intentioned employers could find themselves liable for noncompliance.",
     tags: ["Labour Law", "Compliance", "Employer Obligations"],
   },
+  {
+    title: "APR | 2026 | ISSUE #3",
+    date: "Apr, 2026",
+    author: "Dishit Bhattacharjee",
+    readTime: "10 min read",
+    excerpt:
+      "The evolving jurisprudence under the Insolvency and Bankruptcy Code, 2016 continues to refine the contours of liability, particularly in relation to personal guarantors to corporate debtors. A recent ruling of the NCLT Hyderabad Bench offers a clear exposition on the co-extensive nature of guarantor liability, limitation, and the interplay of the IBC with the Indian Contract Act.",
+    tags: ["IBC", "Personal Guarantees", "Insolvency"],
+  },
 ];
 
 function Newsletters() {
