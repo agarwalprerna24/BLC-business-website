@@ -13,15 +13,47 @@ import { IconCalendar, IconClock, IconArrowRight } from "@tabler/icons-react";
 
 const newsletters = [
   {
-    title: "FEB | 2026 | ISSUE #1",
-    date: "Feb, 2026",
+    id: 6,
+    title: "IBC Amendment 2026 | 2026 | ISSUE #6",
+    date: "May, 2026",
+    author: "Dishit Bhattacharjee",
+    readTime: "9 min read",
+    excerpt:
+      "The insolvency framework has entered another important phase of reform. With most provisions of the Insolvency and Bankruptcy Code (Amendment) Act, 2026 brought into force from 26 May 2026, and the IBBI introducing valuation related amendments, the legal architecture now reflects a more commercially responsive approach to distress resolution, liquidation, and value preservation.",
+    tags: ["IBC", "Insolvency", "Reform"],
+  },
+  {
+    id: 5,
+    title: "Dowry Death: Soon Before Her Death | 2026 | ISSUE #5",
+    date: "May, 2026",
+    author: "Dishit Bhattacharjee",
+    readTime: "7 min read",
+    excerpt:
+      'Few phrases in criminal law have caused as much sustained judicial scrutiny in dowry death cases as the expression "soon before her death". The phrase appears simple, but its legal role is exacting. It is the point at which allegation, evidentiary burden, and statutory presumption converge. In many prosecutions, the success or failure of the case turns on whether the evidence establishes this requirement with the degree of proximity and credibility the law demands.',
+    tags: ["Criminal Law", "Dowry Death", "Evidence"],
+  },
+  {
+    id: 4,
+    title: "Corporate Laws Amendment Bill 2026 | 2026 | ISSUE #4",
+    date: "May, 2026",
     author: "Dishit Bhattacharjee",
     readTime: "8 min read",
     excerpt:
-      "The Supreme Court has reiterated that an arbitral award cannot be set aside merely because another interpretation of the contract is possible. The Apex Court in Jan De Nul Dredging India Pvt. Ltd. v. Tuticorin Port Trust (2026 INSC 34) emphasised that once an arbitral tribunal adopts a plausible and reasoned interpretation of contractual clauses, courts exercising powers under Sections 34 and 37 of the Arbitration and Conciliation Act, 1996 cannot re-appreciate evidence or substitute their own views.",
-    tags: ["Arbitration", "Judicial Interference", "Contract Interpretation"],
+      "The Corporate Laws (Amendment) Bill, 2026 is an important marker in the continuing evolution of India's corporate regulatory framework. It is significant not only for the amendments it proposes, but also for the regulatory philosophy it reflects. The Bill seeks to reduce avoidable procedural burden, recalibrate the enforcement response to technical defaults, and align corporate regulation more closely with contemporary business realities, while shifting regulatory attention toward areas where accountability has greater systemic significance.",
+    tags: ["Corporate Law", "Compliance", "Governance"],
   },
   {
+    id: 3,
+    title: "APR | 2026 | ISSUE #3",
+    date: "Apr, 2026",
+    author: "Dishit Bhattacharjee",
+    readTime: "10 min read",
+    excerpt:
+      "The evolving jurisprudence under the Insolvency and Bankruptcy Code, 2016 continues to refine the contours of liability, particularly in relation to personal guarantors to corporate debtors. A recent ruling of the NCLT Hyderabad Bench offers a clear exposition on the co-extensive nature of guarantor liability, limitation, and the interplay of the IBC with the Indian Contract Act.",
+    tags: ["IBC", "Personal Guarantees", "Insolvency"],
+  },
+  {
+    id: 2,
     title: "MAR | 2026 | ISSUE #2",
     date: "Mar, 2026",
     author: "Dishit Bhattacharjee",
@@ -31,13 +63,14 @@ const newsletters = [
     tags: ["Labour Law", "Compliance", "Employer Obligations"],
   },
   {
-    title: "APR | 2026 | ISSUE #3",
-    date: "Apr, 2026",
+    id: 1,
+    title: "FEB | 2026 | ISSUE #1",
+    date: "Feb, 2026",
     author: "Dishit Bhattacharjee",
-    readTime: "10 min read",
+    readTime: "8 min read",
     excerpt:
-      "The evolving jurisprudence under the Insolvency and Bankruptcy Code, 2016 continues to refine the contours of liability, particularly in relation to personal guarantors to corporate debtors. A recent ruling of the NCLT Hyderabad Bench offers a clear exposition on the co-extensive nature of guarantor liability, limitation, and the interplay of the IBC with the Indian Contract Act.",
-    tags: ["IBC", "Personal Guarantees", "Insolvency"],
+      "The Supreme Court has reiterated that an arbitral award cannot be set aside merely because another interpretation of the contract is possible. The Apex Court in Jan De Nul Dredging India Pvt. Ltd. v. Tuticorin Port Trust (2026 INSC 34) emphasised that once an arbitral tribunal adopts a plausible and reasoned interpretation of contractual clauses, courts exercising powers under Sections 34 and 37 of the Arbitration and Conciliation Act, 1996 cannot re-appreciate evidence or substitute their own views.",
+    tags: ["Arbitration", "Judicial Interference", "Contract Interpretation"],
   },
 ];
 
@@ -118,7 +151,7 @@ function Newsletters() {
                       color: "primary.main",
                     }}
                     component={Link}
-                    to={`/newsletters/${index + 1}`}
+                    to={`/newsletters/${newsletter.id}`}
                   >
                     {newsletter.title}
                   </Typography>
@@ -198,7 +231,7 @@ function Newsletters() {
                     variant="text"
                     endIcon={<IconArrowRight size={18} />}
                     component={Link}
-                    to={`/newsletters/${index + 1}`}
+                    to={`/newsletters/${newsletter.id}`}
                     sx={{
                       mt: 2,
                       justifyContent: "flex-start",
