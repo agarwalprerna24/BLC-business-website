@@ -47,7 +47,7 @@ const HoverCard = styled(Card)(({ theme }) => ({
       {
         duration: 250,
         easing: theme.transitions.easing.easeOut,
-      }
+      },
     ),
   },
 
@@ -603,70 +603,6 @@ function Company() {
                         writ petitions, along with legal research and drafting
                         of pleadings and applications at various stages of
                         proceedings.
-                      </Typography>
-                    </Box>
-                  </CardContent>
-                </HoverCard>
-              </Grid>
-              <Grid sx={{ justifyContent: "center", display: "flex" }}>
-                <HoverCard>
-                  <CardHeader
-                    title="Samarthan Reddy"
-                    subheader="Junior Associate"
-                  />
-                  <img
-                    src="/images/samarthan.png"
-                    height={250}
-                    width={"auto"}
-                  />
-                  <CardContent>
-                    <Grid container>
-                      <Grid>
-                        <MuiLink
-                          href="https://www.linkedin.com/in/samarthan-reddy027784373?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app )"
-                          target="_blank"
-                          sx={{
-                            opacity: 0.8,
-                            "&:hover": { opacity: 1 },
-                            transition: "opacity 0.3s",
-                            mx: "0.25rem",
-                            verticalAlign: "text-top",
-                          }}
-                        >
-                          <IconBrandLinkedin
-                            size={24}
-                            style={{ verticalAlign: "text-top" }}
-                          />
-                        </MuiLink>
-                      </Grid>
-                      <Grid>
-                        <MuiLink
-                          href="mailto:samarthanreddy@dbadvocate.com"
-                          target="_blank"
-                          sx={{
-                            opacity: 0.8,
-                            "&:hover": { opacity: 1 },
-                            transition: "opacity 0.3s",
-                            // mx: "0.25rem",
-                            verticalAlign: "text-top",
-                          }}
-                        >
-                          <IconMail
-                            size={24}
-                            style={{ verticalAlign: "text-top" }}
-                          />
-                        </MuiLink>
-                      </Grid>
-                    </Grid>
-                    <Box className="extraContent">
-                      <Typography variant="subtitle2" textAlign={"left"} p={1}>
-                        Samarthan Reddy is a Junior Associate with experience in
-                        civil court litigation and commercial disputes. He
-                        regularly assists in civil proceedings, interim
-                        applications, and trial matters, and is involved in
-                        legal research and drafting of petitions, applications,
-                        and pleadings, supporting effective representation
-                        across forums.
                       </Typography>
                     </Box>
                   </CardContent>
