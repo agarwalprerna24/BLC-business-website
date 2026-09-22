@@ -9,9 +9,38 @@ import {
   Button,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import { IconCalendar, IconClock, IconArrowRight } from "@tabler/icons-react";
+import {
+  IconCalendar,
+  IconClock,
+  IconArrowRight,
+  IconExternalLink,
+} from "@tabler/icons-react";
 
-const newsletters = [
+type Newsletter = {
+  id: number;
+  title: string;
+  date: string;
+  author: string;
+  readTime: string;
+  excerpt: string;
+  tags: string[];
+  // When present, the newsletter is a downloadable PDF: the card opens this
+  // URL in a new tab instead of navigating to an in-app article page.
+  pdfUrl?: string;
+};
+
+const newsletters: Newsletter[] = [
+  {
+    id: 7,
+    title: "Quarterly Newsletter | Issue I",
+    date: "May–Aug, 2026",
+    author: "Bhattacharjee Law Chambers",
+    readTime: "Quarterly digest",
+    excerpt:
+      "Our inaugural quarterly newsletter brings together the most significant legal developments across India and Telangana between May and August 2026. Issue I distils the quarter's key rulings and reforms across seven sections — Insolvency and Restructuring, Arbitration, Corporate, Commercial and Regulatory, Tax and GST, Labour and Employment, Consumer Protection, and Telangana.",
+    tags: ["Quarterly Digest", "India & Telangana", "Legal Updates"],
+    pdfUrl: "/newsletters/BLC_Quarterly_Newsletter_I.pdf",
+  },
   {
     id: 6,
     title: "IBC Amendment 2026 | 2026 | ISSUE #6",
@@ -115,7 +144,22 @@ function Newsletters() {
 
       <Container maxWidth="lg" sx={{ py: { xs: 8, md: 10 } }}>
         <Grid container spacing={4}>
-          {newsletters.map((newsletter, index) => (
+          {newsletters.map((newsletter, index) => {
+            const isPdf = Boolean(newsletter.pdfUrl);
+            // For PDF newsletters the card links out to the file in a new tab;
+            // otherwise it navigates to the in-app article route.
+            const linkProps = isPdf
+              ? {
+                  component: "a" as const,
+                  href: newsletter.pdfUrl,
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                }
+              : {
+                  component: Link,
+                  to: `/newsletters/${newsletter.id}`,
+                };
+            return (
             <Grid size={{ xs: 12, md: 6, lg: 4 }} key={index}>
               <Card
                 elevation={0}
@@ -141,20 +185,40 @@ function Newsletters() {
                     flexDirection: "column",
                   }}
                 >
-                  <Typography
-                    variant="h5"
+                  <Box
                     sx={{
-                      fontWeight: 600,
+                      display: "flex",
+                      alignItems: "flex-start",
+                      gap: 1,
                       mb: 2,
-                      lineHeight: 1.3,
-                      textDecoration: "none",
-                      color: "primary.main",
                     }}
-                    component={Link}
-                    to={`/newsletters/${newsletter.id}`}
                   >
-                    {newsletter.title}
-                  </Typography>
+                    <Typography
+                      variant="h5"
+                      sx={{
+                        fontWeight: 600,
+                        lineHeight: 1.3,
+                        textDecoration: "none",
+                        color: "primary.main",
+                      }}
+                      {...linkProps}
+                    >
+                      {newsletter.title}
+                    </Typography>
+                    {isPdf && (
+                      <Chip
+                        label="PDF"
+                        size="small"
+                        color="secondary"
+                        sx={{
+                          fontSize: "0.65rem",
+                          height: "20px",
+                          fontWeight: 700,
+                          flexShrink: 0,
+                        }}
+                      />
+                    )}
+                  </Box>
 
                   <Typography
                     variant="body2"
@@ -229,9 +293,14 @@ function Newsletters() {
 
                   <Button
                     variant="text"
-                    endIcon={<IconArrowRight size={18} />}
-                    component={Link}
-                    to={`/newsletters/${newsletter.id}`}
+                    endIcon={
+                      isPdf ? (
+                        <IconExternalLink size={18} />
+                      ) : (
+                        <IconArrowRight size={18} />
+                      )
+                    }
+                    {...linkProps}
                     sx={{
                       mt: 2,
                       justifyContent: "flex-start",
@@ -244,12 +313,13 @@ function Newsletters() {
                       },
                     }}
                   >
-                    Read More
+                    {isPdf ? "Open PDF" : "Read More"}
                   </Button>
                 </CardContent>
               </Card>
             </Grid>
-          ))}
+            );
+          })}
         </Grid>
       </Container>
     </Box>
